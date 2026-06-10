@@ -1,0 +1,35 @@
+<!-- @dsCard group="Brand" viewport="700x210" subtitle="Clear space, minimum sizes, and what never to do" name="Logo usage" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 20px 24px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 20px; font-family: var(--font-sans); }
+  .m { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
+  .clear { border: 1px dashed var(--border-strong); border-radius: 10px; padding: 26px; display: inline-flex; align-items: center; justify-content: center; }
+  .wm { display: inline-flex; align-items: center; font-family: var(--font-sans); font-weight: 600; font-size: 26px; letter-spacing: 0.02em; color: var(--text-primary); }
+  .wm img { height: 0.92em; margin: 0 0.01em; transform: translateY(0.115em); }
+  ul { margin: 0; padding: 0; list-style: none; font-size: 12px; line-height: 1.9; color: var(--text-secondary); }
+  ul li::before { content: "×"; color: var(--color-coral); margin-right: 8px; font-family: var(--font-mono); }
+  .sizes { margin-top: 10px; font-family: var(--font-mono); font-size: 10px; color: var(--text-secondary); line-height: 1.8; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="m">Clear space = 1× Q height</div>
+    <div class="clear"><span class="wm">INOVA<img src="../assets/logo/qcore-mist.svg" alt="Q">O</span></div>
+    <div class="sizes">Min width: 96px digital / 25mm print · symbol min 24px · favicon 32–48px</div>
+  </div>
+  <div>
+    <div class="m">Never</div>
+    <ul>
+      <li>Stretch, rotate, or re-space the wordmark</li>
+      <li>Add gradients, shadows, or outlines</li>
+      <li>Place on noisy or low-contrast backgrounds</li>
+      <li>Use the full wordmark in tiny spaces — use the Q-Core</li>
+      <li>Crowd it with taglines, CTAs, or partner logos</li>
+    </ul>
+  </div>
+</body>
+</html>

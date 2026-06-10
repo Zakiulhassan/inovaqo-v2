@@ -1,0 +1,33 @@
+/* INOVAQO webfonts.
+   ── Concept 2.0 (from "inovaqo brand guidelines - concept.fig") ──
+   Primary:          Neurial Grotesk  → substitute: Hanken Grotesk (Google)
+   Display condensed: Helvetica Bold Condensed → substitute: Roboto Condensed 700
+   Display black:     NewBlack Typeface → substitute: Archivo Black
+   Script accent:     Neonderthaw (used in the file; IS on Google Fonts)
+   Mono:              Geist Mono (unchanged)
+   Geist Sans remains in the stack as the engineering-grade fallback.
+
+   The original Neurial Grotesk / NewBlack / Helvetica Condensed binaries are
+   licensed and NOT embedded in the .fig — when font files are provided, add
+   @font-face rules below and the stacks in typography.css pick them up
+   automatically (they are listed first in each stack). */
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,700;1,700&family=Archivo+Black&family=Neonderthaw&display=swap");
+
+/* When licensed files arrive, drop them in assets/fonts/ and uncomment:
+@font-face {
+  font-family: "Neurial Grotesk";
+  src: url("../assets/fonts/NeurialGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400; font-display: swap;
+}
+@font-face {
+  font-family: "Neurial Grotesk";
+  src: url("../assets/fonts/NeurialGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500; font-display: swap;
+}
+@font-face {
+  font-family: "NewBlack Typeface";
+  src: url("../assets/fonts/NewBlack-Bold.woff2") format("woff2");
+  font-weight: 700; font-display: swap;
+}
+*/

@@ -1,0 +1,32 @@
+<!-- @dsCard group="Colors" viewport="700x160" subtitle="The only three approved gradients" name="Gradients" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 18px; font-family: var(--font-sans); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .g { height: 88px; border-radius: 12px; border: 1px solid var(--border-subtle); position: relative; }
+  .m { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-top: 8px; }
+  .sig { position: absolute; left: 12px; right: 40%; top: 50%; height: 2px; background: var(--gradient-signal-fade); }
+  .sig::before { content: ""; position: absolute; left: -1px; top: -3px; width: 8px; height: 8px; border-radius: 50%; background: var(--color-signal-lime); }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div>
+      <div class="g" style="background: var(--gradient-atmosphere)"></div>
+      <div class="m">Atmosphere · #061113 → #0A3C40</div>
+    </div>
+    <div>
+      <div class="g" style="background: var(--gradient-depth)"></div>
+      <div class="m">Depth · #1B2528 → #0A3C40</div>
+    </div>
+    <div>
+      <div class="g" style="background:#061113"><div class="sig"></div></div>
+      <div class="m">Signal fade · lime → transparent</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- @dsCard group="Proposal" viewport="850x1100" subtitle="Light content page — approach + scope modules" name="Proposal — Content page" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; width: 850px; height: 1100px; background: var(--color-mist-white); color: var(--color-core-dark); font-family: var(--font-sans); position: relative; overflow: hidden; }
+  .frame { position: absolute; inset: 0; padding: 72px 80px; display: flex; flex-direction: column; }
+  .label { font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(10,60,64,0.68); }
+  h1 { font-size: 36px; font-weight: 500; letter-spacing: -0.025em; line-height: 1.1; margin: 16px 0 0; }
+  p.lead { font-size: 15.5px; line-height: 1.65; color: rgba(6,17,19,0.72); margin: 14px 0 0; max-width: 600px; }
+  .path { display: flex; align-items: center; gap: 0; margin-top: 32px; }
+  .pn { background: #fff; border: 1px solid rgba(6,17,19,0.12); border-radius: 10px; padding: 10px 16px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #0A3C40; }
+  .pn.hot { border-color: #0A3C40; background: #0A3C40; color: #EAF2EF; }
+  .pl { width: 22px; height: 1.5px; background: rgba(6,17,19,0.18); }
+  .mods { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 36px; }
+  .mod { background: #fff; border: 1px solid rgba(6,17,19,0.1); border-radius: 14px; padding: 20px; }
+  .mod .m { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(10,60,64,0.68); }
+  .mod .t { font-size: 16.5px; font-weight: 500; margin-top: 8px; }
+  .mod p { font-size: 13px; line-height: 1.6; color: rgba(6,17,19,0.72); margin: 7px 0 0; }
+  .foot { margin-top: auto; display: flex; align-items: center; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(10,60,64,0.6); border-top: 1px solid rgba(6,17,19,0.1); padding-top: 20px; }
+  .foot .r { margin-left: auto; }
+</style>
+</head>
+<body>
+  <div class="frame" data-screen-label="Proposal / Approach">
+    <div class="label">03 / Recommended Approach</div>
+    <h1>Clarity before code.</h1>
+    <p class="lead">We first clarify the product goal, user workflows, AI opportunity, data requirements, technical architecture, and launch path. Once the system is clear, we move into design and engineering with visible progress, structured sprints, and clear communication.</p>
+    <div class="path">
+      <div class="pn hot">Diagnose</div><div class="pl"></div>
+      <div class="pn">Architect</div><div class="pl"></div>
+      <div class="pn">Build</div><div class="pl"></div>
+      <div class="pn">Launch</div><div class="pl"></div>
+      <div class="pn">Scale</div>
+    </div>
+    <div class="mods">
+      <div class="mod"><div class="m">Module 1</div><div class="t">Product Strategy &amp; Requirements</div><p>Users, workflows, feature scope, success criteria, and product roadmap.</p></div>
+      <div class="mod"><div class="m">Module 2</div><div class="t">UX/UI &amp; Product Design</div><p>User flows, wireframes, design system, interface screens, prototype direction.</p></div>
+      <div class="mod"><div class="m">Module 3</div><div class="t">AI Engineering</div><p>AI workflows, LLM integration, automation logic, RAG/agent systems.</p></div>
+      <div class="mod"><div class="m">Module 4</div><div class="t">Product Development</div><p>Frontend, backend, APIs, dashboards, and core application features.</p></div>
+      <div class="mod"><div class="m">Module 5</div><div class="t">Cloud, DevOps &amp; Deployment</div><p>Infrastructure, CI/CD, monitoring, performance, security.</p></div>
+      <div class="mod"><div class="m">Module 6</div><div class="t">QA, Launch &amp; Optimization</div><p>Testing, refinement, launch preparation, early product support.</p></div>
+    </div>
+    <div class="foot"><span>INOVAQO — Product Engineering Proposal</span><span class="r">04</span></div>
+  </div>
+</body>
+</html>

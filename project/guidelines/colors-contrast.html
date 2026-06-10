@@ -1,0 +1,32 @@
+<!-- @dsCard group="Colors" viewport="700x190" subtitle="Approved pairings and forbidden combinations" name="Contrast pairs" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 16px; font-family: var(--font-sans); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .pair { border-radius: 10px; padding: 14px 12px; font-size: 13px; font-weight: 500; border: 1px solid var(--border-subtle); }
+  .pair span { display: block; font-family: var(--font-mono); font-size: 8.5px; font-weight: 400; letter-spacing: 0.08em; margin-top: 6px; opacity: 0.7; text-transform: uppercase; }
+  .verdict { display: flex; align-items: center; gap: 6px; margin: 12px 2px 6px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .ok { color: var(--accent); } .bad { color: var(--color-coral); }
+</style>
+</head>
+<body>
+  <div class="verdict ok">Approved</div>
+  <div class="grid">
+    <div class="pair" style="background:#061113;color:#C9E835">Aa Signal<span>lime on core dark</span></div>
+    <div class="pair" style="background:#061113;color:#EAF2EF">Aa Body<span>mist on core dark</span></div>
+    <div class="pair" style="background:#0A3C40;color:#C9E835">Aa Active<span>lime on deep teal</span></div>
+    <div class="pair" style="background:#EAF2EF;color:#0A3C40;border-color:rgba(6,17,19,.1)">Aa Light<span>teal on mist</span></div>
+  </div>
+  <div class="verdict bad">Forbidden</div>
+  <div class="grid">
+    <div class="pair" style="background:#EAF2EF;color:#C9E835;border-color:rgba(6,17,19,.1)">Aa Weak<span>lime on mist — fails</span></div>
+    <div class="pair" style="background:#EAF2EF;color:#8FB7C2;border-color:rgba(6,17,19,.1)">Aa Soft<span>cloud gray on mist</span></div>
+    <div class="pair" style="background:#C9E835;color:#FF6B4A">Aa Noisy<span>coral on lime</span></div>
+    <div class="pair" style="background:linear-gradient(120deg,#6633ff,#cc33ff);color:#fff">Aa Cliché<span>blue-purple AI gradient</span></div>
+  </div>
+</body>
+</html>

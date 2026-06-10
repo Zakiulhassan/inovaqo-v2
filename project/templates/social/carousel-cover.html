@@ -1,0 +1,45 @@
+<!-- @dsCard group="Social" viewport="1080x1080" subtitle="Carousel hook slide — Template: System Diagram" name="Carousel cover" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; width: 1080px; height: 1080px; background: var(--surface-page); color: var(--text-primary); font-family: var(--font-sans); position: relative; overflow: hidden; }
+  .frame { position: absolute; inset: 0; padding: 96px; display: flex; flex-direction: column; }
+  .label { font-family: var(--font-mono); font-size: 22px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); }
+  h1 { font-size: 84px; font-weight: 500; letter-spacing: -0.035em; line-height: 1.04; margin: 40px 0 0; text-wrap: balance; }
+  h1 em { font-style: normal; color: var(--color-signal-lime); }
+  .diagram { margin-top: 70px; display: flex; align-items: center; gap: 0; }
+  .mod { flex: 1; background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 18px; padding: 28px 24px; }
+  .mod .m { font-family: var(--font-mono); font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+  .mod .t { font-size: 27px; font-weight: 500; margin-top: 10px; letter-spacing: -0.01em; }
+  .mod.hot { border-color: var(--border-accent); }
+  .mod.hot .m { color: var(--color-signal-lime); }
+  .lnk { width: 44px; height: 2px; background: var(--gradient-signal-fade); flex: none; }
+  .foot { margin-top: auto; display: flex; align-items: center; }
+  .wordmark { display: inline-flex; align-items: center; font-weight: 600; font-size: 30px; letter-spacing: 0.02em; }
+  .wordmark img { height: 0.92em; margin: 0 1px; transform: translateY(0.115em); }
+  .pager { margin-left: auto; font-family: var(--font-mono); font-size: 20px; letter-spacing: 0.12em; color: var(--text-muted); }
+  .pager em { font-style: normal; color: var(--color-signal-lime); }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="label">AI Product Engineering / 01</div>
+    <h1>Your AI idea does not need another demo. <em>It needs a product system.</em></h1>
+    <div class="diagram">
+      <div class="mod"><div class="m">01</div><div class="t">Strategy</div></div>
+      <div class="lnk"></div>
+      <div class="mod hot"><div class="m">02</div><div class="t">AI Layer</div></div>
+      <div class="lnk"></div>
+      <div class="mod"><div class="m">03</div><div class="t">Scalable Build</div></div>
+    </div>
+    <div class="foot">
+      <span class="wordmark">INOVA<img src="../../assets/logo/qcore-lime.svg" alt="Q">O</span>
+      <span class="pager"><em>01</em> / 07 →</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* INOVAQO base — minimal element defaults + shared utility classes. */
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Mono label — the brand's structural metadata voice.
+   e.g. AI PRODUCT ENGINEERING / 01 */
+.inq-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  line-height: var(--leading-label);
+  color: var(--text-muted);
+}
+.inq-label--accent { color: var(--accent); }
+
+/* Display + heading helpers */
+.inq-display {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-display);
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+.inq-heading {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-heading);
+  line-height: var(--leading-heading);
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+.inq-body {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-body);
+  color: var(--text-secondary);
+}
+
+/* Card surface */
+.inq-card {
+  background: var(--surface-card);
+  border: var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: var(--card-pad);
+}
+
+/* Dashed continuity line — the hand-drawn lime path from Concept 2.0.
+   Recolorable via background; shapes come from the original Figma vectors.
+   One per composition; it should always travel toward something. */
+.inq-dash-loop, .inq-dash-wave {
+  background: var(--color-signal-lime);
+  -webkit-mask: url("../assets/motifs/dash-loop.svg") center / contain no-repeat;
+  mask: url("../assets/motifs/dash-loop.svg") center / contain no-repeat;
+}
+.inq-dash-wave {
+  -webkit-mask-image: url("../assets/motifs/dash-wave.svg");
+  mask-image: url("../assets/motifs/dash-wave.svg");
+}
+
+/* Script accent word — one per composition, lime, slight rotation ok */
+.inq-accent-word {
+  font-family: var(--font-script);
+  color: var(--color-signal-lime);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+/* Subtle technical grid background (use sparingly) */
+.inq-grid-bg {
+  background-image:
+    linear-gradient(rgba(234,242,239,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(234,242,239,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}

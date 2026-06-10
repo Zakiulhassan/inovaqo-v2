@@ -1,0 +1,43 @@
+<!-- @dsCard group="Slides" viewport="1280x720" subtitle="System diagram — the connected build path" name="Deck — System" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; width: 1280px; height: 720px; background: var(--surface-panel); color: var(--text-primary); font-family: var(--font-sans); position: relative; overflow: hidden; }
+  .frame { position: absolute; inset: 0; padding: 72px 88px; display: flex; flex-direction: column; }
+  .label { font-family: var(--font-mono); font-size: 14px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-signal-lime); }
+  h1 { font-size: 54px; font-weight: 500; letter-spacing: -0.03em; line-height: 1.05; margin: 24px 0 0; text-wrap: balance; }
+  .flow { display: flex; align-items: stretch; gap: 0; margin-top: 64px; }
+  .mod { flex: 1; background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 24px 20px; }
+  .mod .m { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+  .mod .t { font-size: 19px; font-weight: 500; margin-top: 10px; letter-spacing: -0.01em; }
+  .mod p { font-size: 12.5px; line-height: 1.5; color: var(--text-secondary); margin: 8px 0 0; }
+  .mod.hot { border-color: var(--border-accent); }
+  .mod.hot .m { color: var(--color-signal-lime); }
+  .lnk { width: 26px; align-self: center; height: 2px; background: var(--gradient-signal-fade); flex: none; }
+  .foot { margin-top: auto; display: flex; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+  .foot .r { margin-left: auto; }
+</style>
+</head>
+<body>
+  <div class="frame" data-screen-label="Deck / System">
+    <div class="label">The INOVAQO System / 04</div>
+    <h1>One team for the full AI product journey.</h1>
+    <div class="flow">
+      <div class="mod"><div class="m">01</div><div class="t">Strategy</div><p>Use cases, workflows, buildable roadmap.</p></div>
+      <div class="lnk"></div>
+      <div class="mod hot"><div class="m">02</div><div class="t">AI Engineering</div><p>LLMs, RAG, agents, automation.</p></div>
+      <div class="lnk"></div>
+      <div class="mod"><div class="m">03</div><div class="t">Product</div><p>Web, mobile, SaaS, dashboards.</p></div>
+      <div class="lnk"></div>
+      <div class="mod"><div class="m">04</div><div class="t">Cloud</div><p>Infra, CI/CD, security, observability.</p></div>
+      <div class="lnk"></div>
+      <div class="mod"><div class="m">05</div><div class="t">Data + Scale</div><p>Pipelines, analytics, AI-ready systems.</p></div>
+    </div>
+    <div class="foot"><span>INOVAQO</span><span class="r">04</span></div>
+  </div>
+</body>
+</html>

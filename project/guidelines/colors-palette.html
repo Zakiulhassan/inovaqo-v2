@@ -1,0 +1,38 @@
+<!-- @dsCard group="Colors" viewport="700x190" subtitle="The seven INOVAQO colors and their roles" name="Core palette" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 16px; }
+  .row { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+  .sw { border-radius: 10px; height: 96px; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid var(--border-subtle); }
+  .sw b { font-family: var(--font-sans); font-size: 11px; font-weight: 500; display: block; }
+  .sw span { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.06em; opacity: 0.75; }
+  .light { color: #EAF2EF; } .dark { color: #061113; }
+  .roles { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-top: 8px; }
+  .roles div { font-family: var(--font-mono); font-size: 8.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); line-height: 1.45; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw light" style="background:#061113"><b>Core Black Teal</b><span>#061113</span></div>
+    <div class="sw light" style="background:#0A3C40"><b>Deep Technical Teal</b><span>#0A3C40</span></div>
+    <div class="sw dark" style="background:#C9E835"><b>Signal Lime</b><span>#C9E835</span></div>
+    <div class="sw dark" style="background:#EAF2EF; border-color: rgba(6,17,19,0.1)"><b>Mist White</b><span>#EAF2EF</span></div>
+    <div class="sw light" style="background:#1B2528"><b>Graphite Teal</b><span>#1B2528</span></div>
+    <div class="sw dark" style="background:#8FB7C2"><b>Cloud Gray Blue</b><span>#8FB7C2</span></div>
+    <div class="sw light" style="background:#FF6B4A"><b>Controlled Coral</b><span>#FF6B4A</span></div>
+  </div>
+  <div class="roles">
+    <div>Primary dark / atmosphere</div>
+    <div>Brand base / trust panels</div>
+    <div>Signal / CTA / active</div>
+    <div>Light base / text on dark</div>
+    <div>Cards / UI surfaces</div>
+    <div>Muted text / diagrams</div>
+    <div>Rare alerts only</div>
+  </div>
+</body>
+</html>

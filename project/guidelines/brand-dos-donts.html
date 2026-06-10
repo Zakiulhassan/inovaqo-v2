@@ -1,0 +1,42 @@
+<!-- @dsCard group="Brand" viewport="700x270" subtitle="The rules that keep the brand sharp" name="Do's & don'ts" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 22px 24px; font-family: var(--font-sans); display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  .m { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px; }
+  .do .m { color: var(--accent); } .dont .m { color: var(--color-coral); }
+  ul { margin: 0; padding: 0; list-style: none; font-size: 12.5px; line-height: 2; color: var(--text-secondary); }
+  .do li::before { content: "—"; color: var(--accent); margin-right: 8px; }
+  .dont li::before { content: "×"; color: var(--color-coral); margin-right: 10px; font-family: var(--font-mono); }
+</style>
+</head>
+<body>
+  <div class="do">
+    <div class="m">Do</div>
+    <ul>
+      <li>Lead with AI product engineering</li>
+      <li>Dark technical atmosphere, layered surfaces</li>
+      <li>Lime as rare, intentional signal</li>
+      <li>Large type, fewer words, one idea per section</li>
+      <li>Show systems: diagrams, modules, pathways</li>
+      <li>Make proof visible early</li>
+      <li>Motion that explains transformation</li>
+    </ul>
+  </div>
+  <div class="dont">
+    <div class="m">Don't</div>
+    <ul>
+      <li>Robots, brains, neural nets, circuit patterns</li>
+      <li>Blue/purple AI gradients, particles, glow</li>
+      <li>Lime as wallpaper or text on light</li>
+      <li>Crowded SaaS card grids, generic icons</li>
+      <li>Corporate stock photos, fake holograms</li>
+      <li>Unverified metrics or hype claims</li>
+      <li>Bouncy, glitchy, or decorative motion</li>
+    </ul>
+  </div>
+</body>
+</html>

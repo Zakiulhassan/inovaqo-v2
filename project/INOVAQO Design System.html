@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INOVAQO Design System</title>
+<link rel="icon" href="assets/logo/favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--gradient-atmosphere); min-height: 100vh; color: var(--text-primary); font-family: var(--font-sans); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 88px 48px 96px; }
+  .wordmark { display: inline-flex; align-items: center; font-weight: 600; font-size: 30px; letter-spacing: 0.02em; }
+  .wordmark img { height: 0.92em; margin: 0 1px; transform: translateY(0.115em); }
+  .label { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-signal-lime); margin-top: 40px; }
+  h1 { font-size: 56px; font-weight: 500; letter-spacing: -0.035em; line-height: 1.03; margin: 16px 0 0; max-width: 760px; text-wrap: balance; }
+  .sub { font-size: 17px; line-height: 1.65; color: var(--text-secondary); max-width: 600px; margin: 20px 0 0; }
+  .pal { display: flex; gap: 6px; margin-top: 36px; border-radius: 12px; overflow: hidden; max-width: 560px; }
+  .pal div { height: 40px; flex: 1; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 56px; }
+  a.card { display: block; background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 22px; text-decoration: none; color: inherit; transition: border-color 150ms var(--ease-system), transform 150ms var(--ease-system); }
+  a.card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+  a.card .m { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+  a.card .t { font-size: 17px; font-weight: 500; margin-top: 9px; letter-spacing: -0.01em; }
+  a.card p { font-size: 13px; line-height: 1.55; color: var(--text-secondary); margin: 7px 0 0; }
+  .note { margin-top: 48px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); line-height: 2; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="wordmark">INOVA<img src="assets/logo/qcore-lime.svg" alt="Q">O</span>
+    <div class="label">Design System / Controlled Velocity</div>
+    <h1>Move fast. Build clear. Scale right.</h1>
+    <p class="sub">The working system behind INOVAQO — AI product engineering for bold ideas that need to scale. Foundations, components, and templates for website, product UI, social, ads, decks, and proposals. Open the Design System tab for the full specimen library.</p>
+    <div class="pal">
+      <div style="background:#061113"></div>
+      <div style="background:#0A3C40"></div>
+      <div style="background:#1B2528"></div>
+      <div style="background:#8FB7C2"></div>
+      <div style="background:#EAF2EF"></div>
+      <div style="background:#C9E835"></div>
+      <div style="background:#FF6B4A"></div>
+    </div>
+    <div class="grid">
+      <a class="card" href="ui_kits/website/index.html"><div class="m">UI Kit</div><div class="t">Website</div><p>Hero, problem, system, services, process, work, CTA.</p></a>
+      <a class="card" href="ui_kits/product/index.html"><div class="m">UI Kit</div><div class="t">Product UI</div><p>Dashboard, statuses, tables, AI assistant panel.</p></a>
+      <a class="card" href="templates/deck/cover.html"><div class="m">Templates</div><div class="t">Pitch deck</div><p>Dark impact, light clarity, and system diagram slides.</p></a>
+      <a class="card" href="templates/social/statement-post.html"><div class="m">Templates</div><div class="t">Social</div><p>Statement, carousel, and checklist post systems.</p></a>
+      <a class="card" href="templates/ads/square-ad.html"><div class="m">Templates</div><div class="t">Ads</div><p>Square and landscape paid formats.</p></a>
+      <a class="card" href="templates/proposal/cover.html"><div class="m">Templates</div><div class="t">Proposal</div><p>Dark cover + light strategic content pages.</p></a>
+    </div>
+    <div class="note">Tokens: tokens/*.css · Components: components/* · Guidelines: guidelines/* · Source modules: notes/*</div>
+  </div>
+</body>
+</html>

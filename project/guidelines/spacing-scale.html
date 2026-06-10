@@ -1,0 +1,26 @@
+<!-- @dsCard group="Spacing" viewport="700x230" subtitle="4px base scale + section rhythm" name="Spacing scale" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 20px 24px; font-family: var(--font-sans); }
+  .row { display: flex; align-items: center; gap: 12px; margin-bottom: 7px; }
+  .m { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); width: 150px; flex: none; }
+  .bar { height: 12px; background: var(--accent-dim); border-left: 2px solid var(--accent); }
+  .note { margin-top: 14px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); line-height: 1.8; }
+</style>
+</head>
+<body>
+  <div class="row"><div class="m">--space-2 · 8</div><div class="bar" style="width:8px"></div></div>
+  <div class="row"><div class="m">--space-4 · 16</div><div class="bar" style="width:16px"></div></div>
+  <div class="row"><div class="m">--space-5 · 24</div><div class="bar" style="width:24px"></div></div>
+  <div class="row"><div class="m">--space-6 · 32</div><div class="bar" style="width:32px"></div></div>
+  <div class="row"><div class="m">--space-7 · 48</div><div class="bar" style="width:48px"></div></div>
+  <div class="row"><div class="m">--space-8 · 64</div><div class="bar" style="width:64px"></div></div>
+  <div class="row"><div class="m">--space-9 · 96</div><div class="bar" style="width:96px"></div></div>
+  <div class="row"><div class="m">--space-10 · 128</div><div class="bar" style="width:128px"></div></div>
+  <div class="note">Sections: hero 140–200px · major 120–160px · medium 80–120px · card padding 28–40px. Mobile ≈ 60%.</div>
+</body>
+</html>

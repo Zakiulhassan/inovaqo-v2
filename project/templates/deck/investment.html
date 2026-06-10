@@ -1,0 +1,45 @@
+<!-- @dsCard group="Slides" viewport="1280x720" subtitle="Light clarity slide — investment framing" name="Deck — Investment" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; width: 1280px; height: 720px; background: var(--color-mist-white); color: var(--color-core-dark); font-family: var(--font-sans); position: relative; overflow: hidden; }
+  .frame { position: absolute; inset: 0; padding: 72px 88px; display: flex; flex-direction: column; }
+  .label { font-family: var(--font-mono); font-size: 14px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(10,60,64,0.68); }
+  h1 { font-size: 54px; font-weight: 500; letter-spacing: -0.03em; line-height: 1.05; margin: 24px 0 0; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 44px; }
+  .inv { font-size: 64px; font-weight: 500; letter-spacing: -0.03em; line-height: 1; }
+  .inv .mark { background: linear-gradient(transparent 64%, #C9E835 64%); }
+  .inv-sub { font-size: 17px; line-height: 1.6; color: rgba(6,17,19,0.72); margin-top: 18px; max-width: 460px; }
+  table { width: 100%; border-collapse: collapse; }
+  td, th { text-align: left; padding: 11px 4px; border-bottom: 1px solid rgba(6,17,19,0.12); font-size: 15px; color: rgba(6,17,19,0.78); }
+  th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(10,60,64,0.68); font-weight: 500; }
+  td:first-child { color: var(--color-core-dark); font-weight: 500; }
+  .foot { margin-top: auto; display: flex; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(10,60,64,0.6); }
+  .foot .r { margin-left: auto; }
+</style>
+</head>
+<body>
+  <div class="frame" data-screen-label="Deck / Investment">
+    <div class="label">Investment / 11</div>
+    <h1>Priced for risk reduction, not hours.</h1>
+    <div class="grid">
+      <div>
+        <div class="inv">From <span class="mark">$30K</span></div>
+        <div class="inv-sub">Final investment depends on product complexity, AI requirements, integrations, cloud infrastructure, and launch timeline.</div>
+      </div>
+      <table>
+        <tr><th>Phase</th><th>Duration</th><th>Focus</th></tr>
+        <tr><td>Discovery &amp; Architecture</td><td>1–2 wks</td><td>Scope, product path, tech plan</td></tr>
+        <tr><td>UX/UI Design</td><td>2–4 wks</td><td>Flows, screens, design system</td></tr>
+        <tr><td>Development Sprints</td><td>6–10 wks</td><td>Core product + AI features</td></tr>
+        <tr><td>QA &amp; Launch</td><td>1–2 wks</td><td>Testing, deployment, polish</td></tr>
+      </table>
+    </div>
+    <div class="foot"><span>INOVAQO</span><span class="r">11</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- @dsCard group="Ads" viewport="1200x628" subtitle="Landscape ad / LinkedIn banner — mini landing page" name="Landscape ad" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; width: 1200px; height: 628px; background: var(--surface-page); color: var(--text-primary); font-family: var(--font-sans); position: relative; overflow: hidden; }
+  .grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(234,242,239,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(234,242,239,0.035) 1px, transparent 1px); background-size: 56px 56px; }
+  .frame { position: absolute; inset: 0; padding: 72px 80px; display: flex; gap: 56px; align-items: center; }
+  .copy { flex: 1.25; }
+  h1 { font-size: 58px; font-weight: 500; letter-spacing: -0.03em; line-height: 1.04; margin: 26px 0 0; text-wrap: balance; }
+  h1 em { font-style: normal; color: var(--color-signal-lime); }
+  .label { font-family: var(--font-mono); font-size: 16px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-signal-lime); }
+  .sub { font-size: 21px; line-height: 1.5; color: var(--text-secondary); margin-top: 22px; max-width: 560px; }
+  .cta { display: inline-flex; align-items: center; gap: 10px; background: var(--color-signal-lime); color: var(--color-core-dark); font-size: 19px; font-weight: 600; padding: 15px 28px; border-radius: 12px; margin-top: 32px; }
+  .stack { flex: 0.75; display: flex; flex-direction: column; }
+  .n { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 14px 20px; font-size: 17px; font-weight: 500; display: flex; align-items: center; }
+  .n .m { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--text-muted); width: 50px; text-transform: uppercase; }
+  .n.hot { border-color: var(--border-accent); }
+  .n.hot::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--color-signal-lime); margin-left: auto; }
+  .v { width: 2px; height: 16px; background: rgba(234,242,239,0.14); margin-left: 28px; }
+  .wordmark { position: absolute; left: 80px; bottom: 48px; display: inline-flex; align-items: center; font-weight: 600; font-size: 22px; letter-spacing: 0.02em; }
+  .wordmark img { height: 0.92em; margin: 0 1px; transform: translateY(0.115em); }
+</style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="frame">
+    <div class="copy">
+      <div class="label">AI Product Engineering</div>
+      <h1>Build AI products <em>without the chaos</em>.</h1>
+      <div class="sub">Move fast without building fragile software. One team from strategy to scale.</div>
+      <div class="cta">Start Your Product Build →</div>
+    </div>
+    <div class="stack">
+      <div class="n"><span class="m">01</span>Strategy</div><div class="v"></div>
+      <div class="n hot"><span class="m">02</span>AI Engineering</div><div class="v"></div>
+      <div class="n"><span class="m">03</span>Product</div><div class="v"></div>
+      <div class="n"><span class="m">04</span>Cloud + Scale</div>
+    </div>
+  </div>
+  <span class="wordmark">INOVA<img src="../../assets/logo/qcore-mist.svg" alt="Q">O</span>
+</body>
+</html>

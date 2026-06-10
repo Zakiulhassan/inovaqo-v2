@@ -1,0 +1,36 @@
+<!-- @dsCard group="Colors" viewport="700x170" subtitle="Light mode — clean and premium; primary actions go teal" name="Light mode surfaces" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 0; }
+  .wrap { background: #EAF2EF; padding: 20px; font-family: var(--font-sans); display: flex; gap: 16px; align-items: center; }
+  .card { background: #fff; border: 1px solid rgba(6,17,19,0.1); border-radius: 12px; padding: 16px; flex: 1; }
+  .t { color: #061113; font-size: 15px; font-weight: 500; letter-spacing: -0.01em; }
+  .s { color: rgba(6,17,19,0.72); font-size: 12.5px; line-height: 1.55; margin-top: 4px; }
+  .m { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.11em; text-transform: uppercase; color: rgba(10,60,64,0.68); margin-bottom: 6px; }
+  .btn { display: inline-block; background: #0A3C40; color: #EAF2EF; font-size: 12.5px; font-weight: 500; padding: 9px 16px; border-radius: 10px; margin-top: 10px; }
+  .hl { background: linear-gradient(transparent 62%, #C9E835 62%); }
+  .rule { width: 230px; font-family: var(--font-mono); font-size: 10px; line-height: 1.7; color: rgba(6,17,19,0.72); }
+  .no { color: #FF6B4A; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="m">Light mode / proposal pages</div>
+      <div class="t">Dark teal text on Mist White. Lime appears only as a <span class="hl">highlight</span>.</div>
+      <div class="s">Background #EAF2EF · text #061113 · secondary #0A3C40 · cards #FFFFFF.</div>
+      <div class="btn">Book a Discovery Call</div>
+    </div>
+    <div class="rule">
+      CTA = deep teal fill<br>
+      accent = lime underline / marker<br>
+      <span class="no">never lime text on light</span><br>
+      <span class="no">never lime-filled sections</span>
+    </div>
+  </div>
+</body>
+</html>

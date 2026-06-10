@@ -1,0 +1,272 @@
+<!-- @dsCard group="Website" viewport="1440x900" subtitle="Marketing site — hero, trust, problem, system, work, CTA" name="Website" -->
+<!-- @startingPoint section="Website" subtitle="INOVAQO marketing homepage" viewport="1440x900" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INOVAQO — AI product engineering</title>
+<link rel="icon" href="../../assets/logo/favicon.svg">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--surface-page); color: var(--text-primary); font-family: var(--font-sans); }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 64px; }
+  a { color: inherit; text-decoration: none; }
+
+  /* Nav */
+  nav { position: sticky; top: 0; z-index: 10; background: rgba(6,17,19,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-subtle); }
+  .nav-inner { display: flex; align-items: center; gap: 36px; height: 72px; max-width: 1280px; margin: 0 auto; padding: 0 64px; }
+  .wordmark { display: inline-flex; align-items: center; font-weight: 600; font-size: 21px; letter-spacing: 0.02em; }
+  .wordmark img { height: 0.92em; margin: 0 0.5px; transform: translateY(0.115em); }
+  .nav-links { display: flex; gap: 28px; font-size: 14px; color: var(--text-secondary); }
+  .nav-links a:hover { color: var(--text-primary); }
+  .nav-cta { margin-left: auto; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; padding: 12px 20px; border-radius: var(--radius-md); border: 1px solid transparent; cursor: pointer; transition: all var(--duration-fast) var(--ease-system); line-height: 1.2; }
+  .btn-primary { background: var(--color-signal-lime); color: var(--color-core-dark); }
+  .btn-primary:hover { background: #D6F04E; }
+  .btn-primary:hover .arr { transform: translateX(3px); }
+  .arr { display: inline-block; transition: transform var(--duration-fast) var(--ease-system); }
+  .btn-secondary { background: transparent; color: var(--text-primary); border-color: rgba(234,242,239,0.22); }
+  .btn-secondary:hover { border-color: var(--border-strong); background: rgba(234,242,239,0.05); }
+
+  /* Hero */
+  .hero { background: var(--gradient-atmosphere); border-bottom: 1px solid var(--border-subtle); }
+  .hero-inner { display: grid; grid-template-columns: 1.15fr 1fr; gap: 64px; align-items: center; padding: 120px 64px 110px; }
+  .hero h1 { font-size: 76px; font-weight: 500; letter-spacing: var(--tracking-display); line-height: var(--leading-display); margin: 20px 0 0; text-wrap: balance; }
+  .hero h1 em { font-style: normal; color: var(--color-signal-lime); }
+  .hero p { font-size: 19px; line-height: 1.6; color: var(--text-secondary); max-width: 520px; margin: 24px 0 0; }
+  .hero-ctas { display: flex; gap: 14px; margin-top: 36px; }
+  .hero-proof { display: flex; gap: 28px; margin-top: 44px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+  .hero-proof b { color: var(--text-primary); font-weight: 500; }
+
+  /* Architecture visual */
+  .arch { display: flex; flex-direction: column; gap: 0; align-items: stretch; }
+  .arch-node { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 14px; padding: 14px 18px; display: flex; align-items: center; gap: 14px; }
+  .arch-node.hot { border-color: var(--border-accent); }
+  .arch-node .num { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; color: var(--text-muted); width: 56px; flex: none; text-transform: uppercase; }
+  .arch-node .nm { font-size: 15px; font-weight: 500; }
+  .arch-node .dot { margin-left: auto; width: 7px; height: 7px; border-radius: 50%; background: rgba(143,183,194,0.4); }
+  .arch-node.hot .dot { background: var(--color-signal-lime); }
+  .arch-link { width: 2px; height: 22px; margin-left: 40px; background: rgba(234,242,239,0.12); position: relative; overflow: hidden; }
+  .arch-link::after { content: ""; position: absolute; left: 0; top: -12px; width: 2px; height: 12px; background: var(--color-signal-lime); animation: drip 2.4s var(--ease-system) infinite; }
+  .arch-link:nth-of-type(4)::after { animation-delay: 0.6s; }
+  .arch-link:nth-of-type(6)::after { animation-delay: 1.2s; }
+  .arch-link:nth-of-type(8)::after { animation-delay: 1.8s; }
+  @keyframes drip { 0% { top: -12px; } 60%, 100% { top: 24px; } }
+  @media (prefers-reduced-motion: reduce) { .arch-link::after { animation: none; } }
+
+  /* Sections */
+  section { padding: 120px 0; }
+  .label { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+  .label.lime { color: var(--color-signal-lime); }
+  h2 { font-size: 48px; font-weight: 500; letter-spacing: var(--tracking-heading); line-height: 1.08; margin: 18px 0 0; text-wrap: balance; max-width: 720px; }
+  .section-sub { font-size: 17px; line-height: 1.65; color: var(--text-secondary); max-width: 620px; margin: 18px 0 0; }
+
+  /* Trust strip */
+  .trust { border-bottom: 1px solid var(--border-subtle); padding: 28px 0; }
+  .trust-inner { display: flex; align-items: center; gap: 32px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); flex-wrap: wrap; }
+  .trust-inner .lead { color: var(--text-secondary); }
+
+  /* Problem */
+  .problem-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; }
+  .p-card { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 26px; }
+  .p-card .pm { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-coral); }
+  .p-card h3 { font-size: 18px; font-weight: 500; margin: 12px 0 0; letter-spacing: -0.01em; }
+  .p-card p { font-size: 13.5px; line-height: 1.6; color: var(--text-secondary); margin: 8px 0 0; }
+
+  /* System / services */
+  .system { background: var(--surface-panel); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
+  .svc-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; margin-top: 52px; align-items: stretch; }
+  .svc { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 14px; padding: 22px 18px; position: relative; }
+  .svc + .svc { margin-left: 18px; }
+  .svc::before { content: ""; position: absolute; left: -19px; top: 50%; width: 18px; height: 1.5px; background: rgba(234,242,239,0.18); }
+  .svc:first-child::before { display: none; }
+  .svc .sm { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+  .svc h3 { font-size: 16.5px; font-weight: 500; margin: 10px 0 0; letter-spacing: -0.01em; }
+  .svc p { font-size: 12.5px; line-height: 1.55; color: var(--text-secondary); margin: 8px 0 0; }
+  .svc.hot { border-color: var(--border-accent); }
+  .svc.hot .sm { color: var(--color-signal-lime); }
+
+  /* Process */
+  .proc { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 52px; }
+  .step .ring { width: 38px; height: 38px; border-radius: 50%; border: 1.5px solid var(--border-strong); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 11px; color: var(--text-secondary); }
+  .step.now .ring { border-color: var(--color-signal-lime); color: var(--color-signal-lime); background: var(--accent-dim); }
+  .step h3 { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; margin: 14px 0 0; }
+  .step.now h3 { color: var(--color-signal-lime); }
+  .step p { font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin: 8px 0 0; }
+
+  /* Work */
+  .case { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 40px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; margin-top: 48px; }
+  .case + .case { margin-top: 20px; }
+  .case h3 { font-size: 28px; font-weight: 500; letter-spacing: -0.02em; margin: 14px 0 0; }
+  .case .crow { display: grid; grid-template-columns: 96px 1fr; gap: 14px; margin-top: 14px; font-size: 14px; line-height: 1.55; color: var(--text-secondary); }
+  .case .ck { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); padding-top: 3px; }
+  .case .ck.lime { color: var(--color-signal-lime); }
+  .case .outcome { color: var(--text-primary); font-weight: 500; font-size: 15px; }
+  .tags { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 20px; }
+  .tag { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); border: 1px solid var(--border-subtle); border-radius: 999px; padding: 4px 10px; }
+  .case-visual { background: var(--gradient-depth); border: 1px solid var(--border-subtle); border-radius: 16px; display: flex; align-items: center; justify-content: center; min-height: 240px; position: relative; overflow: hidden; }
+  .case-visual .ph { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); text-align: center; line-height: 2; }
+
+  /* Why */
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+  .why { border-top: 1.5px solid var(--border-strong); padding-top: 20px; }
+  .why.hot { border-top-color: var(--color-signal-lime); }
+  .why h3 { font-size: 17px; font-weight: 500; margin: 0; }
+  .why p { font-size: 13.5px; line-height: 1.6; color: var(--text-secondary); margin: 8px 0 0; }
+
+  /* CTA */
+  .cta { background: var(--gradient-atmosphere); border-top: 1px solid var(--border-subtle); text-align: center; }
+  .cta h2 { margin: 18px auto 0; }
+  .cta .section-sub { margin: 18px auto 0; }
+  .cta .hero-ctas { justify-content: center; }
+
+  footer { border-top: 1px solid var(--border-subtle); padding: 36px 0; }
+  .foot { display: flex; align-items: center; gap: 24px; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+  .foot .right { margin-left: auto; }
+</style>
+</head>
+<body>
+  <nav data-screen-label="Website / Nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="#">INOVA<img src="../../assets/logo/qcore-lime.svg" alt="Q">O</a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#">Insights</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="nav-cta"><a class="btn btn-primary" href="#cta">Book a Discovery Call</a></div>
+    </div>
+  </nav>
+
+  <header class="hero" data-screen-label="Website / Hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="label lime">AI Product Engineering</div>
+        <h1>AI product engineering for bold ideas that need to <em>scale</em>.</h1>
+        <p>INOVAQO helps founders and businesses turn AI-powered concepts into reliable, cloud-native products — built with clarity, speed, and engineering discipline.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#cta">Book a Discovery Call <span class="arr">→</span></a>
+          <a class="btn btn-secondary" href="#work">See What We've Built</a>
+        </div>
+        <div class="hero-proof"><span><b>75+</b> products shipped</span><span><b>98%</b> client satisfaction</span><span><b>2-wk</b> clarity sprint</span></div>
+      </div>
+      <div class="arch" aria-label="Concept to scale architecture">
+        <div class="arch-node"><span class="num">input</span><span class="nm">Concept</span><span class="dot"></span></div>
+        <div class="arch-link"></div>
+        <div class="arch-node hot"><span class="num">02</span><span class="nm">AI Layer</span><span class="dot"></span></div>
+        <div class="arch-link"></div>
+        <div class="arch-node"><span class="num">03</span><span class="nm">Product Interface</span><span class="dot"></span></div>
+        <div class="arch-link"></div>
+        <div class="arch-node"><span class="num">04</span><span class="nm">Cloud Infrastructure</span><span class="dot"></span></div>
+        <div class="arch-link"></div>
+        <div class="arch-node"><span class="num">output</span><span class="nm">Scale</span><span class="dot"></span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="trust">
+    <div class="container trust-inner">
+      <span class="lead">Trusted by teams building in</span>
+      <span>Cloud Security</span><span>LegalTech</span><span>EdTech</span><span>FinTech</span><span>HealthTech</span><span>SaaS</span>
+    </div>
+  </div>
+
+  <section data-screen-label="Website / Problem">
+    <div class="container">
+      <div class="label">The Problem / 01</div>
+      <h2>Most AI products do not fail because the idea was bad.</h2>
+      <p class="section-sub">They fail because the use case was unclear, the architecture was weak, the team moved without a system, or the product could not scale after launch.</p>
+      <div class="problem-grid">
+        <div class="p-card"><div class="pm">Risk / A</div><h3>Unclear AI value</h3><p>The idea sounds promising, but the workflow, user need, and business outcome are not defined.</p></div>
+        <div class="p-card"><div class="pm">Risk / B</div><h3>Slow execution</h3><p>Competitors ship while the product stays stuck in planning, hiring, or vendor handoffs.</p></div>
+        <div class="p-card"><div class="pm">Risk / C</div><h3>Fragile architecture</h3><p>Fast builds become expensive rewrites when cloud, data, and product decisions are weak.</p></div>
+        <div class="p-card"><div class="pm">Risk / D</div><h3>Black-box delivery</h3><p>Founders lose confidence when they cannot see progress or trust the build path.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="system" id="services" data-screen-label="Website / Services">
+    <div class="container">
+      <div class="label lime">The INOVAQO System / 02</div>
+      <h2>One team for the full AI product journey.</h2>
+      <p class="section-sub">Strategy, AI engineering, product engineering, cloud architecture, and data systems — connected into one clear build path.</p>
+      <div class="svc-grid">
+        <div class="svc"><div class="sm">01</div><h3>AI Product Strategy</h3><p>Turn unclear AI opportunities into use cases, workflows, and a buildable roadmap.</p></div>
+        <div class="svc hot"><div class="sm">02</div><h3>AI Engineering</h3><p>AI features, agents, RAG pipelines, and automation that solve real product problems.</p></div>
+        <div class="svc"><div class="sm">03</div><h3>Product Engineering</h3><p>Web apps, mobile apps, SaaS platforms, and dashboards built for real users and growth.</p></div>
+        <div class="svc"><div class="sm">04</div><h3>Cloud &amp; DevOps</h3><p>Secure, observable, cloud-native systems ready for launch, traffic, and scale.</p></div>
+        <div class="svc"><div class="sm">05</div><h3>Data Systems &amp; ETL</h3><p>Scattered data becomes clean pipelines, dashboards, and AI-ready systems.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" data-screen-label="Website / Process">
+    <div class="container">
+      <div class="label">Build Clarity Framework / 03</div>
+      <h2>Speed works when the system is clear.</h2>
+      <p class="section-sub">A structured product engineering process that reduces ambiguity, exposes risks early, and keeps founders in control from concept to scale.</p>
+      <div class="proc">
+        <div class="step"><div class="ring">01</div><h3>Diagnose</h3><p>Understand the product, business goal, users, constraints, and real technical challenge.</p></div>
+        <div class="step"><div class="ring">02</div><h3>Architect</h3><p>Define scope, AI approach, cloud structure, stack, timeline, and delivery path.</p></div>
+        <div class="step now"><div class="ring">03</div><h3>Build</h3><p>Engineer the product system with visible progress and no black-box delivery.</p></div>
+        <div class="step"><div class="ring">04</div><h3>Launch</h3><p>Prepare for real users, production environments, performance, and security.</p></div>
+        <div class="step"><div class="ring">05</div><h3>Scale</h3><p>Improve, automate, optimize, and grow the system after launch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" style="padding-top: 0" data-screen-label="Website / Work">
+    <div class="container">
+      <div class="label">Selected Work / 04</div>
+      <h2>Products built for real users, workflows, and scale.</h2>
+      <div class="case">
+        <div>
+          <div class="label">Case Study / LegalTech AI</div>
+          <h3>Lexgen AI</h3>
+          <div class="crow"><div class="ck">Challenge</div><div>A legal firm needed to reduce document drafting time without sacrificing compliance.</div></div>
+          <div class="crow"><div class="ck">System</div><div>AI-assisted document generation using LLM workflows, structured prompts, backend logic, and review safeguards.</div></div>
+          <div class="crow"><div class="ck lime">Outcome</div><div class="outcome">Document generation reduced from hours to minutes.</div></div>
+          <div class="tags"><span class="tag">AI Product</span><span class="tag">Cloud</span><span class="tag">Product Engineering</span></div>
+        </div>
+        <div class="case-visual"><div class="ph">product screenshot<br>drop case study visual here</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 0" data-screen-label="Website / Why">
+    <div class="container">
+      <div class="label">Why INOVAQO / 05</div>
+      <h2>Built for founders who need speed without uncertainty.</h2>
+      <div class="why-grid">
+        <div class="why hot"><h3>Strategy before code</h3><p>We define the real product problem, business goal, and technical path before writing tickets.</p></div>
+        <div class="why"><h3>AI + product + cloud in one team</h3><p>No separate vendors for strategy, AI, product, infrastructure, and data.</p></div>
+        <div class="why"><h3>No black-box delivery</h3><p>You see what is being built, why it matters, what changed, and what comes next.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="cta" data-screen-label="Website / CTA">
+    <div class="container">
+      <div class="label lime">Next Step</div>
+      <h2 style="max-width: 100%">Have an AI product idea that needs to become real?</h2>
+      <p class="section-sub" style="max-width: 560px">Tell us what you're building. We'll help you understand the product path, technical risks, AI opportunities, and next steps.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#">Book a Discovery Call <span class="arr">→</span></a>
+        <a class="btn btn-secondary" href="#">Tell Us What You're Building</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <a class="wordmark" style="font-size: 15px" href="#">INOVA<img src="../../assets/logo/qcore-mist.svg" alt="Q">O</a>
+      <span>Move fast. Build clear. Scale right.</span>
+      <span class="right">© 2026 INOVAQO</span>
+    </div>
+  </footer>
+</body>
+</html>

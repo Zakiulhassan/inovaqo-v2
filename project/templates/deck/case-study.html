@@ -1,0 +1,42 @@
+<!-- @dsCard group="Slides" viewport="1280x720" subtitle="Case study proof slide" name="Deck — Case study" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; width: 1280px; height: 720px; background: var(--surface-page); color: var(--text-primary); font-family: var(--font-sans); position: relative; overflow: hidden; }
+  .frame { position: absolute; inset: 0; padding: 72px 88px; display: flex; flex-direction: column; }
+  .label { font-family: var(--font-mono); font-size: 14px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); }
+  .grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; margin-top: 28px; flex: 1; }
+  h1 { font-size: 50px; font-weight: 500; letter-spacing: -0.03em; line-height: 1.05; margin: 0; }
+  .crow { display: grid; grid-template-columns: 110px 1fr; gap: 16px; margin-top: 20px; font-size: 16.5px; line-height: 1.55; color: var(--text-secondary); }
+  .ck { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); padding-top: 4px; }
+  .ck.lime { color: var(--color-signal-lime); }
+  .outcome { color: var(--text-primary); font-weight: 500; font-size: 19px; }
+  .tags { display: flex; gap: 8px; margin-top: 26px; }
+  .tag { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); border: 1px solid var(--border-subtle); border-radius: 999px; padding: 5px 12px; }
+  .visual { background: var(--gradient-depth); border: 1px solid var(--border-subtle); border-radius: 20px; display: flex; align-items: center; justify-content: center; }
+  .visual .ph { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); text-align: center; line-height: 2.1; }
+  .foot { margin-top: 30px; display: flex; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+  .foot .r { margin-left: auto; }
+</style>
+</head>
+<body>
+  <div class="frame" data-screen-label="Deck / Case study">
+    <div class="label">Case Study / LegalTech AI / 08</div>
+    <div class="grid">
+      <div>
+        <h1>Lexgen AI</h1>
+        <div class="crow"><div class="ck">Challenge</div><div>A legal firm needed to reduce document drafting time without sacrificing compliance.</div></div>
+        <div class="crow"><div class="ck">System</div><div>AI-assisted document generation using LLM workflows, structured prompts, backend logic, and review safeguards.</div></div>
+        <div class="crow"><div class="ck lime">Outcome</div><div class="outcome">Document generation reduced from hours to minutes.</div></div>
+        <div class="tags"><span class="tag">AI Product</span><span class="tag">Cloud</span><span class="tag">Product Engineering</span></div>
+      </div>
+      <div class="visual"><div class="ph">product screenshot<br>drop case visual here</div></div>
+    </div>
+    <div class="foot"><span>INOVAQO</span><span class="r">08</span></div>
+  </div>
+</body>
+</html>

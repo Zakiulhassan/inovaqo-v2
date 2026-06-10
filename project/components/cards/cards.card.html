@@ -1,0 +1,59 @@
+<!-- @dsCard group="Components" viewport="700x420" subtitle="ServiceCard, CaseStudyCard, ProcessCard, MetricCard" name="Cards" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body { margin: 0; background: var(--surface-page); padding: 22px 24px; }</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const findNS = () => { for (const k of Object.getOwnPropertyNames(window)) { try { const v = window[k]; if (v && typeof v === "object" && v.Button && v.QCore) return v; } catch (e) {} } return null; };
+function Demo({ NS }) {
+  const { ServiceCard, CaseStudyCard, ProcessCard, MetricCard } = NS;
+  return (
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+        <ServiceCard index="02" title="AI Engineering" tags={["LLM", "RAG", "Agents", "Automation"]} active>
+          Build AI features, automation systems, and intelligent workflows that solve real product problems.
+        </ServiceCard>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <MetricCard value="75" suffix="+" label="Products shipped" />
+          <MetricCard value="98" suffix="%" label="Client satisfaction" />
+        </div>
+      </div>
+      <div>
+        <CaseStudyCard
+          industry="LegalTech AI"
+          title="Lexgen AI"
+          challenge="Reduce document drafting time without sacrificing compliance."
+          system="AI-assisted document generation with LLM workflows and review safeguards."
+          outcome="Drafting reduced from hours to minutes."
+          tags={["AI Product", "Cloud"]}
+        />
+      </div>
+      <div style={{ gridColumn: "span 2", display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 8, marginTop: 4 }}>
+        <ProcessCard step="01" name="Diagnose" last>Clarify goal, workflow, AI opportunity, and risk.</ProcessCard>
+        <ProcessCard step="03" name="Build" active last>Engineer with visible progress — no black boxes.</ProcessCard>
+        <ProcessCard step="05" name="Scale" last>Automate, optimize, and grow after launch.</ProcessCard>
+      </div>
+    </div>
+  );
+}
+function Pending() { return <div style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)", fontSize: 12, letterSpacing: "0.05em", lineHeight: 1.7 }}>Component bundle not yet compiled — set the project File type to "Design System" in the Share menu, then reload.</div>; }
+const root = ReactDOM.createRoot(document.getElementById("root"));
+let tries = 0;
+(function boot() {
+  const NS = findNS();
+  if (NS) { root.render(<Demo NS={NS} />); return; }
+  root.render(<Pending />);
+  if (++tries < 12) setTimeout(boot, 500);
+})();
+</script>
+</body>
+</html>

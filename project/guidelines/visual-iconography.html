@@ -1,0 +1,34 @@
+<!-- @dsCard group="Visual Language" viewport="700x210" subtitle="Linear, geometric, 1.5px stroke — systems, not objects (Lucide substitute)" name="Iconography" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 20px 24px; font-family: var(--font-sans); }
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+  .ic { border: 1px solid var(--border-subtle); border-radius: 10px; padding: 12px 8px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .ic svg { width: 22px; height: 22px; color: var(--text-secondary); stroke-width: 1.5; }
+  .ic.active svg { color: var(--accent); }
+  .ic .m { font-family: var(--font-mono); font-size: 7.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); text-align: center; line-height: 1.5; }
+  .rules { margin-top: 12px; display: flex; gap: 18px; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+  .rules .no { color: var(--color-coral); }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="ic"><i data-lucide="git-branch"></i><div class="m">Strategy<br>decision path</div></div>
+    <div class="ic active"><i data-lucide="workflow"></i><div class="m">AI Engineering<br>signal + node</div></div>
+    <div class="ic"><i data-lucide="layout-grid"></i><div class="m">Product<br>modular grid</div></div>
+    <div class="ic"><i data-lucide="layers"></i><div class="m">Cloud<br>layered infra</div></div>
+    <div class="ic"><i data-lucide="git-merge"></i><div class="m">Data<br>pipeline</div></div>
+    <div class="ic"><i data-lucide="scaling"></i><div class="m">Scale<br>expanding grid</div></div>
+  </div>
+  <div class="rules">
+    <span>stroke 1.5 · 20–24px · grid-built</span>
+    <span class="no">never: robot · brain · cloud puff · lightbulb · rocket · laptop</span>
+  </div>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

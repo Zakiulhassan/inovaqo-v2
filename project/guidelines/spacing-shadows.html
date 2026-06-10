@@ -1,0 +1,32 @@
+<!-- @dsCard group="Spacing" viewport="700x180" subtitle="Depth from layered surfaces, not heavy shadows" name="Shadows & elevation" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--gradient-atmosphere); padding: 24px; display: flex; gap: 14px; font-family: var(--font-sans); }
+  .c { flex: 1; border-radius: 14px; padding: 16px; background: var(--surface-card); }
+  .t { font-size: 13px; font-weight: 500; color: var(--text-primary); }
+  .m { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-top: 8px; line-height: 1.6; }
+</style>
+</head>
+<body>
+  <div class="c" style="border: 1px solid var(--border-subtle)">
+    <div class="t">Flat card</div>
+    <div class="m">surface + border only<br>default for grids of cards</div>
+  </div>
+  <div class="c" style="border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card)">
+    <div class="t">Elevated</div>
+    <div class="m">--shadow-card<br>hover, feature panels</div>
+  </div>
+  <div class="c" style="border: 1px solid var(--border-strong); box-shadow: var(--shadow-raised)">
+    <div class="t">Raised</div>
+    <div class="m">--shadow-raised<br>modals, popovers</div>
+  </div>
+  <div class="c" style="border: 1px solid var(--border-accent); box-shadow: var(--shadow-signal)">
+    <div class="t">Signal</div>
+    <div class="m">--shadow-signal<br>active/selected only — rare</div>
+  </div>
+</body>
+</html>

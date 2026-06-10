@@ -1,0 +1,34 @@
+<!-- @dsCard group="Colors" viewport="700x150" subtitle="60% dark · 25% teal · 10% mist · 5% lime · 1–2% coral" name="Usage ratio" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 22px 20px; font-family: var(--font-sans); }
+  .bar { display: flex; height: 52px; border-radius: 10px; overflow: hidden; border: 1px solid var(--border-subtle); }
+  .bar div { height: 100%; }
+  .labels { display: flex; margin-top: 10px; }
+  .labels div { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+  .note { margin-top: 14px; font-size: 12.5px; color: var(--text-secondary); }
+  .note b { color: var(--accent); font-weight: 500; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <div style="width:60%;background:#061113"></div>
+    <div style="width:24%;background:#0A3C40"></div>
+    <div style="width:10%;background:#EAF2EF"></div>
+    <div style="width:4.5%;background:#C9E835"></div>
+    <div style="width:1.5%;background:#FF6B4A"></div>
+  </div>
+  <div class="labels">
+    <div style="width:60%">dark base 60%</div>
+    <div style="width:24%">teal surfaces 25%</div>
+    <div style="width:10%">mist 10%</div>
+    <div style="width:4.5%">lime 5%</div>
+    <div style="width:1.5%"></div>
+  </div>
+  <div class="note">Lime is rare on purpose — <b>the signal feels valuable because it appears intentionally.</b></div>
+</body>
+</html>

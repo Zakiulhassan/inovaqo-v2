@@ -1,0 +1,134 @@
+<!-- @dsCard group="Product UI" viewport="1440x820" subtitle="Dashboard — sidebar, pipelines, statuses, AI assistant panel" name="Product UI" -->
+<!-- @startingPoint section="Product UI" subtitle="INOVAQO-branded product dashboard" viewport="1440x820" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INOVAQO — Product UI</title>
+<link rel="icon" href="../../assets/logo/favicon.svg">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--surface-page); color: var(--text-primary); font-family: var(--font-sans); font-size: 14px; }
+  .app { display: grid; grid-template-columns: 232px 1fr 300px; min-height: 100vh; }
+
+  /* Sidebar */
+  aside { background: var(--surface-panel); border-right: 1px solid var(--border-subtle); padding: 20px 14px; display: flex; flex-direction: column; gap: 4px; }
+  .wordmark { display: inline-flex; align-items: center; font-weight: 600; font-size: 17px; letter-spacing: 0.02em; padding: 4px 10px 18px; }
+  .wordmark img { height: 0.92em; margin: 0 0.5px; transform: translateY(0.115em); }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 9px; color: rgba(234,242,239,0.7); font-size: 13.5px; cursor: pointer; border: 1px solid transparent; }
+  .nav-item:hover { background: rgba(234,242,239,0.05); color: var(--text-primary); }
+  .nav-item.active { background: rgba(6,17,19,0.5); color: var(--text-primary); border-color: var(--border-subtle); }
+  .nav-item.active .nd { background: var(--color-signal-lime); }
+  .nd { width: 6px; height: 6px; border-radius: 50%; background: rgba(143,183,194,0.35); flex: none; }
+  .nav-sec { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(234,242,239,0.4); padding: 16px 10px 6px; }
+
+  /* Main */
+  main { padding: 24px 28px; }
+  .topbar { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
+  .topbar h1 { font-size: 21px; font-weight: 500; letter-spacing: -0.01em; margin: 0; }
+  .env { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-signal-lime); border: 1px solid rgba(201,232,53,0.35); border-radius: 999px; padding: 3px 10px; }
+  .topbar .btn { margin-left: auto; }
+  .btn { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; font-size: 13px; padding: 9px 16px; border-radius: 10px; border: 1px solid transparent; cursor: pointer; background: var(--color-signal-lime); color: var(--color-core-dark); font-family: var(--font-sans); }
+  .btn:hover { background: #D6F04E; }
+  .btn.ghost { background: transparent; color: var(--text-primary); border-color: rgba(234,242,239,0.22); }
+
+  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .metric { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 14px; padding: 18px; }
+  .metric .v { font-size: 30px; font-weight: 500; letter-spacing: -0.03em; line-height: 1; }
+  .metric .v em { font-style: normal; color: var(--color-signal-lime); }
+  .metric .l { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-top: 9px; }
+
+  .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border-subtle); margin-top: 24px; }
+  .tab { padding: 10px 14px; font-size: 13.5px; color: var(--text-muted); border: none; background: none; border-bottom: 2px solid transparent; margin-bottom: -1px; cursor: pointer; font-family: var(--font-sans); }
+  .tab.on { color: var(--text-primary); font-weight: 500; border-bottom-color: var(--color-signal-lime); }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 16px; background: var(--surface-card); border-radius: 14px; overflow: hidden; }
+  .tablewrap { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 14px; overflow: hidden; margin-top: 16px; }
+  .tablewrap table { margin: 0; }
+  th { text-align: left; font-family: var(--font-mono); font-size: 9.5px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); padding: 11px 16px; border-bottom: 1px solid var(--border-subtle); background: rgba(234,242,239,0.02); }
+  td { padding: 12px 16px; border-bottom: 1px solid var(--border-subtle); color: var(--text-secondary); font-size: 13.5px; }
+  tr:last-child td { border-bottom: none; }
+  td:first-child { color: var(--text-primary); font-weight: 500; }
+  .status { display: inline-flex; align-items: center; gap: 7px; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .status .d { width: 7px; height: 7px; border-radius: 50%; }
+  .s-run { color: var(--color-signal-lime); } .s-run .d { background: var(--color-signal-lime); }
+  .s-q { color: var(--text-muted); } .s-q .d { background: rgba(143,183,194,0.5); }
+  .s-warn { color: var(--color-coral); } .s-warn .d { background: var(--color-coral); }
+  .mono-cell { font-family: var(--font-mono); font-size: 11.5px; }
+
+  /* AI panel */
+  .ai { background: var(--surface-panel); border-left: 1px solid var(--border-subtle); padding: 20px 18px; display: flex; flex-direction: column; }
+  .ai-head { display: flex; align-items: center; gap: 9px; }
+  .ai-head img { width: 18px; height: 18px; }
+  .ai-head .t { font-size: 14px; font-weight: 500; }
+  .ai-head .live { margin-left: auto; display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-signal-lime); }
+  .ai-head .live::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--color-signal-lime); }
+  .ai-meta { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(234,242,239,0.4); margin-top: 14px; }
+  .msg { background: rgba(6,17,19,0.55); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 12px 14px; font-size: 12.5px; line-height: 1.6; color: var(--text-secondary); margin-top: 8px; }
+  .msg.user { background: transparent; border-style: dashed; }
+  .msg b { color: var(--text-primary); font-weight: 500; }
+  .ai-input { margin-top: auto; display: flex; gap: 8px; }
+  .ai-input input { flex: 1; background: var(--surface-field); border: 1px solid var(--border-subtle); border-radius: 10px; padding: 10px 12px; color: var(--text-primary); font-family: var(--font-sans); font-size: 13px; outline: none; }
+  .ai-input input:focus { border-color: var(--border-accent); }
+</style>
+</head>
+<body>
+  <div class="app" data-screen-label="Product UI / Dashboard">
+    <aside>
+      <span class="wordmark">INOVA<img src="../../assets/logo/qcore-lime.svg" alt="Q">O</span>
+      <div class="nav-sec">Build</div>
+      <div class="nav-item active"><span class="nd"></span>Pipelines</div>
+      <div class="nav-item"><span class="nd"></span>Agents</div>
+      <div class="nav-item"><span class="nd"></span>Workflows</div>
+      <div class="nav-sec">System</div>
+      <div class="nav-item"><span class="nd"></span>Data sources</div>
+      <div class="nav-item"><span class="nd"></span>Deployments</div>
+      <div class="nav-item"><span class="nd"></span>Observability</div>
+      <div class="nav-sec">Workspace</div>
+      <div class="nav-item"><span class="nd"></span>Settings</div>
+    </aside>
+
+    <main>
+      <div class="topbar">
+        <h1>Pipelines</h1>
+        <span class="env">Production</span>
+        <button class="btn ghost" type="button">Run all</button>
+        <button class="btn" type="button">New pipeline</button>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="v">24<em>/26</em></div><div class="l">Pipelines healthy</div></div>
+        <div class="metric"><div class="v">1.2<em>s</em></div><div class="l">P95 latency</div></div>
+        <div class="metric"><div class="v">99.98<em>%</em></div><div class="l">Uptime, 30 days</div></div>
+      </div>
+      <div class="tabs">
+        <button class="tab on" type="button">All</button>
+        <button class="tab" type="button">Ingest</button>
+        <button class="tab" type="button">Transform</button>
+        <button class="tab" type="button">AI workflows</button>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <tr><th>Pipeline</th><th>Status</th><th>Source</th><th>Last run</th><th>Duration</th></tr>
+          <tr><td>Ingest / CRM sync</td><td><span class="status s-run"><span class="d"></span>Running</span></td><td class="mono-cell">salesforce.prod</td><td>2m ago</td><td class="mono-cell">42s</td></tr>
+          <tr><td>Embeddings refresh</td><td><span class="status s-q"><span class="d"></span>Queued</span></td><td class="mono-cell">pg.documents</td><td>1h ago</td><td class="mono-cell">3m 10s</td></tr>
+          <tr><td>Eval suite / nightly</td><td><span class="status s-warn"><span class="d"></span>Degraded</span></td><td class="mono-cell">evals.core</td><td>6h ago</td><td class="mono-cell">12m 44s</td></tr>
+          <tr><td>Invoice extraction</td><td><span class="status s-run"><span class="d"></span>Running</span></td><td class="mono-cell">s3.inbound</td><td>14m ago</td><td class="mono-cell">1m 02s</td></tr>
+          <tr><td>Usage rollup</td><td><span class="status s-q"><span class="d"></span>Scheduled</span></td><td class="mono-cell">events.stream</td><td>Tonight 02:00</td><td class="mono-cell">—</td></tr>
+        </table>
+      </div>
+    </main>
+
+    <div class="ai" data-screen-label="Product UI / AI panel">
+      <div class="ai-head"><img src="../../assets/logo/qcore-lime.svg" alt=""><span class="t">Assistant</span><span class="live">Live</span></div>
+      <div class="ai-meta">Context / pipelines · prod</div>
+      <div class="msg user">Why is the nightly eval suite degraded?</div>
+      <div class="msg"><b>Two eval workers timed out</b> after the 02:00 embeddings refresh ran long. Re-running the suite now should pass; I can also stagger the schedules by 30 minutes.</div>
+      <div class="ai-meta">Suggested action</div>
+      <div class="msg"><b>Stagger schedules</b> — move evals to 02:30 so they never overlap the refresh window.</div>
+      <div class="ai-input"><input type="text" placeholder="Ask about your system…"><button class="btn" type="button">→</button></div>
+    </div>
+  </div>
+</body>
+</html>

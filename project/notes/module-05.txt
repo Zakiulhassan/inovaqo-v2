@@ -1,0 +1,579 @@
+Module 5 — Color System + Typography System
+This module defines the visual foundation that will make INOVAQO feel premium, sharp, futuristic, energetic, trustworthy, and scalable.
+The big rule:
+INOVAQO should not look colorful. It should look controlled — with color used like signal, energy, and intelligence.
+
+1. Color strategy
+INOVAQO’s color system should be built around:
+Dark technical depth
+Deep teal trust
+Lime signal energy
+Soft neutral readability
+Rare high-contrast alerts
+Your current colors are strategically good:
+#0A3C40 — strong, deep, technical, trustworthy
+#C9E835 — energetic, AI-native, memorable
+They should stay, but they need supporting tones.
+
+2. Final recommended palette
+Role
+Name
+Hex
+Purpose
+Primary Dark
+Core Black Teal
+#061113
+Main dark background, premium atmosphere
+Brand Base
+Deep Technical Teal
+#0A3C40
+Brand panels, trust, depth, section backgrounds
+Primary Accent
+Signal Lime
+#C9E835
+CTA, active states, motion signal, brand memory
+Light Base
+Mist White
+#EAF2EF
+Light backgrounds, text on dark, clean contrast
+Surface Dark
+Graphite Teal
+#1B2528
+Cards, panels, nav, product UI surfaces
+Secondary Cool
+Cloud Gray Blue
+#8FB7C2
+Muted text, diagrams, metadata, secondary UI
+Rare Accent
+Controlled Coral
+#FF6B4A
+Warnings, special contrast, limited campaign use
+
+3. Color roles
+#061113 — Core Black Teal
+Use this as the main dark base.
+It gives INOVAQO the “new atmosphere” feeling: premium, technical, immersive, and safe.
+Use for:
+homepage hero
+website dark sections
+pitch deck covers
+social post backgrounds
+product UI dark mode
+motion logo background
+Avoid using pure black.
+ Pure black can feel harsh and less premium.
+
+#0A3C40 — Deep Technical Teal
+This is the trust layer.
+It should make the brand feel stable, intelligent, and engineered.
+Use for:
+secondary backgrounds
+brand panels
+service cards
+footer
+technical diagrams
+deck sections
+product UI navigation
+overlays
+This color is strong because it avoids the common AI blue/purple cliché.
+
+#C9E835 — Signal Lime
+This is the memory asset.
+Use it like an active signal, not decoration.
+Use for:
+primary CTA
+hover states
+active UI states
+motion trails
+important numbers
+selected words
+data pulses
+cursor interactions
+favicon/logo accent
+chart highlights
+Do not use lime for long body text.
+ Do not make every section glow lime.
+ Do not use it as a generic neon effect.
+The lime should feel valuable because it appears intentionally.
+
+#EAF2EF — Mist White
+This is the main readability color.
+Use for:
+text on dark
+light mode backgrounds
+clean website sections
+proposal documents
+deck content slides
+product UI surfaces in light mode
+This is better than pure white because it feels softer and more premium.
+
+#1B2528 — Graphite Teal
+Use this for layered surfaces.
+Use for:
+cards
+product panels
+nav surfaces
+dividers
+dark mode form fields
+case study cards
+dashboard widgets
+It helps the interface feel layered without becoming noisy.
+
+#8FB7C2 — Cloud Gray Blue
+Use this as a secondary information color.
+Use for:
+muted text
+metadata
+labels
+diagrams
+secondary icons
+technical UI details
+chart support color
+It should not compete with lime.
+
+#FF6B4A — Controlled Coral
+Use this rarely.
+Use for:
+warnings
+important alerts
+error states
+small contrast moments
+campaign-specific emphasis
+Do not use it as a major brand color.
+
+4. Color usage ratio
+Use this system:
+Color Group
+Usage
+Dark base tones
+55–65%
+Deep teal/surface tones
+20–25%
+Mist/light neutral
+10–15%
+Signal lime
+3–7%
+Coral accent
+1–2%
+Important rule
+Lime should be rare.
+If lime is everywhere, the brand will feel cheap, loud, and less premium.
+
+5. Accessibility notes
+These combinations are strong:
+Combination
+Use
+Lime #C9E835 on Core Dark #061113
+CTA, highlights
+Mist White #EAF2EF on Core Dark #061113
+Main text
+Lime #C9E835 on Deep Teal #0A3C40
+Active states
+Mist White #EAF2EF on Deep Teal #0A3C40
+Text
+Deep Teal #0A3C40 on Mist White #EAF2EF
+Light mode text
+Avoid this:
+Combination
+Problem
+Lime #C9E835 on Mist White #EAF2EF
+Too low contrast
+Cloud Gray #8FB7C2 on Mist White #EAF2EF
+Too soft
+Coral #FF6B4A on lime
+Uncontrolled and noisy
+
+6. Dark mode rules
+Dark mode should be the primary brand expression.
+Dark mode structure
+Background: #061113
+Section panels: #0A3C40
+Cards: #1B2528
+Primary text: #EAF2EF
+Secondary text: #8FB7C2
+CTA: #C9E835
+CTA text: #061113
+Borders: rgba(234, 242, 239, 0.10)
+Dark mode feel
+Dark mode should feel:
+premium
+immersive
+intelligent
+safe
+technical
+energetic through accents only
+Avoid making it look like a gaming/cyberpunk brand.
+
+7. Light mode rules
+Light mode should feel clean and premium, not plain.
+Light mode structure
+Background: #EAF2EF
+Text: #061113
+Secondary text: #0A3C40
+Cards: #FFFFFF or very soft teal-tinted white
+CTA: #0A3C40
+CTA text: #EAF2EF
+Accent: #C9E835 used as highlight, underline, or small signal
+Light mode warning
+Do not use lime as the main text color on light backgrounds.
+ It will look weak and reduce trust.
+
+8. Gradient rules
+Gradients can be used, but they must be controlled.
+Use gradients for
+atmospheric hero backgrounds
+motion transitions
+subtle product-system depth
+diagram overlays
+case study visual environments
+Recommended gradients
+Deep atmosphere
+#061113 → #0A3C40
+Use for hero backgrounds and dark sections.
+Signal glow
+#C9E835 → transparent
+Use very subtly around active signal paths.
+Product depth
+#1B2528 → #0A3C40
+Use for cards, panels, and product UI surfaces.
+Avoid
+purple-blue AI gradients
+rainbow gradients
+heavy neon glow
+random blobs
+gradient text everywhere
+gradients that reduce readability
+
+9. Typography strategy
+Typography should do most of the premium work.
+INOVAQO’s typography must feel:
+sharp
+modern
+confident
+engineered
+readable
+founder-friendly
+technical without becoming cold
+The type should not feel:
+playful
+rounded and childish
+corporate-default
+overly futuristic
+too decorative
+too thin
+too heavy
+
+10. Recommended font pairing
+Best premium pairing
+Primary: Aeonik
+Secondary: Geist Mono or IBM Plex Mono
+Use this if font licensing is possible.
+Why it works:
+Aeonik feels modern, clean, premium, and product-native.
+Geist Mono or IBM Plex Mono adds technical credibility.
+
+Best practical web pairing
+Primary: Geist Sans
+Secondary: Geist Mono
+This is the strongest implementation-friendly option.
+Why it works:
+clean for SaaS/product interfaces
+strong readability
+modern technical feel
+easy to use in Next.js
+works well across website and product UI
+
+Alternative pairing
+Primary: Söhne / Neue Haas Grotesk
+Secondary: JetBrains Mono
+This feels more premium editorial-tech, but licensing may be heavier.
+
+11. Recommended final type system
+Use this for INOVAQO
+Primary brand font
+Geist Sans or Aeonik
+Technical accent font
+Geist Mono
+This pairing gives INOVAQO the right balance:
+futuristic but not fake
+technical but readable
+premium but not luxury-cold
+startup-native but trustworthy
+
+12. Typography hierarchy
+Hero headline
+Use large, tight, confident type.
+Recommended style:
+Weight: 500–600
+Letter spacing: -0.04em to -0.02em
+Line height: 0.95–1.05
+Desktop size: 72px–112px
+Tablet size: 52px–72px
+Mobile size: 38px–48px
+Example:
+AI product engineering for bold ideas that need to scale.
+The headline should feel like a statement, not a slogan.
+
+Section heading
+Use strong but slightly smaller editorial type.
+Recommended style:
+Weight: 500–600
+Letter spacing: -0.03em
+Line height: 1.05–1.15
+Desktop size: 44px–64px
+Mobile size: 30px–40px
+Example:
+Build fast without building fragile systems.
+
+Body copy
+Body text should be calm and readable.
+Recommended style:
+Weight: 400
+Line height: 1.55–1.7
+Desktop size: 16px–18px
+Mobile size: 15px–16px
+Color on dark: rgba(234, 242, 239, 0.78)
+Color on light: rgba(6, 17, 19, 0.78)
+Avoid long blocks of text.
+ The brand should feel easy to scan.
+
+Labels / metadata
+Use mono font.
+Recommended style:
+Font: Geist Mono
+Weight: 400–500
+Letter spacing: 0.08em–0.14em
+Text transform: uppercase
+Size: 11px–13px
+Example:
+AI PRODUCT ENGINEERING / 01
+Use labels for:
+service categories
+case study tags
+process numbers
+metrics
+technical notes
+slide labels
+UI metadata
+
+Numbers / metrics
+Metrics should feel confident and product-like.
+Recommended style:
+Large number: Geist Sans, 500–600
+Label: Geist Mono
+Accent: lime for small signals, not full number every time
+Example:
+75+
+ CLIENTS SERVED
+
+13. Type scale
+Recommended web type scale:
+Token
+Desktop
+Mobile
+Use
+Display XL
+112px
+52px
+Large hero moments
+Display
+88px
+44px
+Main hero headline
+H1
+72px
+40px
+Page title
+H2
+56px
+34px
+Section title
+H3
+36px
+28px
+Cards/feature headings
+H4
+24px
+22px
+Small sections
+Body Large
+20px
+18px
+Hero supporting text
+Body
+17px
+16px
+Paragraphs
+Body Small
+14px
+14px
+Captions
+Label
+12px
+11px
+Mono labels
+
+14. Typography behavior
+Headlines
+Should be short and strong.
+Good:
+Build AI products without the chaos.
+Weak:
+We help businesses unlock the full potential of artificial intelligence through innovative digital transformation solutions.
+The first one feels clear.
+ The second one feels generic.
+
+Body copy
+Use direct, founder-friendly language.
+Good:
+We help you turn unclear AI opportunities into structured product plans, working software, and scalable systems.
+Weak:
+Our team leverages cutting-edge technologies to deliver innovative solutions tailored to your business needs.
+
+Mono text
+Use mono as a detail, not the main voice.
+Good:
+DIAGNOSE / ARCHITECT / BUILD / SCALE
+Bad:
+Writing entire paragraphs in mono font.
+
+15. Website typography rules
+Hero
+One strong headline
+One short paragraph
+Two CTAs max
+One proof point near hero
+Services
+Service titles should be simple
+Descriptions should explain business value
+Use mono labels for structure
+Example:
+SERVICE / 02
+AI Engineering
+Build intelligent workflows, automation systems, and AI product features that solve real business problems.
+
+Case studies
+Use type hierarchy like this:
+CASE STUDY / AI PRODUCT
+Turning fragmented workflows into a scalable AI product system
+Short outcome line.
+ Then tags and proof.
+
+16. Ads typography rules
+Ads need stronger contrast and fewer words.
+Ad format
+1 strong headline
+1 supporting line
+1 CTA
+1 visual system element
+Example:
+Your AI idea does not need another demo.
+It needs a product system.
+CTA: Build with INOVAQO
+Use lime for one signal word or CTA only.
+
+17. Pitch deck typography rules
+Pitch decks should feel premium and decisive.
+Slide structure
+Big headline
+One sentence of explanation
+Diagram or proof
+No paragraph-heavy slides
+Example:
+Speed without chaos.
+We help teams move from AI concept to scalable product with clear architecture, fast execution, and reliable cloud systems.
+
+18. Product UI typography rules
+Product UI must be more restrained than marketing.
+Use:
+smaller type
+clear hierarchy
+readable labels
+less drama
+fewer lime accents
+strong spacing
+UI font recommendation
+Use Geist Sans + Geist Mono.
+UI text rules
+Table text: 14px–15px
+Sidebar labels: 14px–15px
+Card titles: 16px–18px
+Dashboard numbers: 32px–48px
+Metadata: 11px–12px mono
+
+19. Implementation-ready color tokens
+Use these token names for design/dev consistency.
+:root {
+ --color-core-dark: #061113;
+ --color-brand-teal: #0A3C40;
+ --color-signal-lime: #C9E835;
+ --color-mist-white: #EAF2EF;
+ --color-graphite: #1B2528;
+ --color-cloud-gray: #8FB7C2;
+ --color-coral: #FF6B4A;
+
+ --text-primary-dark: #EAF2EF;
+ --text-secondary-dark: rgba(234, 242, 239, 0.72);
+ --text-muted-dark: rgba(143, 183, 194, 0.76);
+
+ --text-primary-light: #061113;
+ --text-secondary-light: rgba(6, 17, 19, 0.72);
+ --text-muted-light: rgba(10, 60, 64, 0.68);
+
+ --border-dark: rgba(234, 242, 239, 0.10);
+ --border-light: rgba(6, 17, 19, 0.10);
+}
+
+20. Implementation-ready typography tokens
+:root {
+ --font-sans: "Geist", "Inter", system-ui, sans-serif;
+ --font-mono: "Geist Mono", "IBM Plex Mono", monospace;
+
+ --tracking-tight: -0.04em;
+ --tracking-heading: -0.03em;
+ --tracking-label: 0.12em;
+
+ --leading-display: 0.98;
+ --leading-heading: 1.08;
+ --leading-body: 1.65;
+}
+
+21. Tailwind direction
+For a Next.js/Tailwind build, the theme should feel like this:
+const colors = {
+ core: "#061113",
+ teal: "#0A3C40",
+ lime: "#C9E835",
+ mist: "#EAF2EF",
+ graphite: "#1B2528",
+ cloud: "#8FB7C2",
+ coral: "#FF6B4A",
+};
+Use utility patterns like:
+<section className="bg-[#061113] text-[#EAF2EF]">
+ <span className="font-mono text-xs uppercase tracking-[0.12em] text-[#C9E835]">
+   AI Product Engineering / 01
+ </span>
+
+ <h1 className="max-w-5xl text-6xl font-medium tracking-[-0.04em] leading-[0.98]">
+   AI product engineering for bold ideas that need to scale.
+ </h1>
+
+ <p className="max-w-2xl text-lg leading-[1.65] text-[#EAF2EF]/75">
+   INOVAQO helps founders turn AI-powered concepts into reliable,
+   cloud-native products built with clarity, speed, and engineering discipline.
+ </p>
+</section>
+
+22. Final recommendation
+Color direction
+Use:
+Core dark + deep teal + rare signal lime.
+This gives INOVAQO a memorable, premium, AI-native atmosphere without looking like a generic AI template.
+Typography direction
+Use:
+Geist Sans / Aeonik + Geist Mono.
+This gives the brand the right mix of product clarity, technical precision, and modern confidence.
+Most important design rule
+Let the typography and spacing create the premium feeling. Let lime create the memory. Let motion create the energy.
+

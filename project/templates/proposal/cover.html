@@ -1,0 +1,37 @@
+<!-- @dsCard group="Proposal" viewport="850x1100" subtitle="Dark proposal cover — strategic product plan, not a quote" name="Proposal — Cover" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; width: 850px; height: 1100px; background: var(--gradient-atmosphere); color: var(--text-primary); font-family: var(--font-sans); position: relative; overflow: hidden; }
+  .frame { position: absolute; inset: 0; padding: 84px 80px; display: flex; flex-direction: column; }
+  .wordmark { display: inline-flex; align-items: center; font-weight: 600; font-size: 24px; letter-spacing: 0.02em; }
+  .wordmark img { height: 0.92em; margin: 0 1px; transform: translateY(0.115em); }
+  .label { font-family: var(--font-mono); font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-signal-lime); margin-top: auto; }
+  h1 { font-size: 58px; font-weight: 500; letter-spacing: -0.03em; line-height: 1.05; margin: 24px 0 0; text-wrap: balance; }
+  .sub { font-size: 18px; line-height: 1.6; color: var(--text-secondary); margin-top: 22px; max-width: 560px; }
+  .meta { margin-top: 72px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; border-top: 1px solid var(--border-subtle); padding-top: 26px; }
+  .meta .k { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+  .meta .v { font-size: 15px; font-weight: 500; margin-top: 7px; }
+  .sig { width: 300px; height: 2px; background: var(--gradient-signal-fade); margin-top: 36px; position: relative; }
+  .sig::before { content: ""; position: absolute; left: -2px; top: -4px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-signal-lime); }
+</style>
+</head>
+<body>
+  <div class="frame" data-screen-label="Proposal / Cover">
+    <span class="wordmark">INOVA<img src="../../assets/logo/qcore-lime.svg" alt="Q">O</span>
+    <div class="label">Product Engineering Proposal</div>
+    <h1>Product Engineering Proposal for [Client Name]</h1>
+    <div class="sub">Strategy, AI, product engineering, and cloud execution for a scalable digital product.</div>
+    <div class="sig"></div>
+    <div class="meta">
+      <div><div class="k">Prepared for</div><div class="v">[Client / Product]</div></div>
+      <div><div class="k">Date</div><div class="v">June 2026</div></div>
+      <div><div class="k">Engagement</div><div class="v">AI Product Build</div></div>
+    </div>
+  </div>
+</body>
+</html>

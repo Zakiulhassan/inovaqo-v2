@@ -1,0 +1,37 @@
+<!-- @dsCard group="Visual Language" viewport="700x180" subtitle="A lime pulse moving with purpose through structured systems" name="Signal Path" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 24px; font-family: var(--font-sans); }
+  .track { position: relative; height: 64px; }
+  svg { width: 100%; height: 64px; display: block; }
+  .node { fill: var(--surface-raised); stroke: rgba(234,242,239,0.18); }
+  .node.active { stroke: var(--color-signal-lime); }
+  .lbl { font-family: var(--font-mono); font-size: 8.5px; letter-spacing: 0.1em; fill: var(--text-muted); text-transform: uppercase; }
+  .path-base { stroke: rgba(234,242,239,0.12); stroke-width: 1.5; fill: none; }
+  .path-sig { stroke: #C9E835; stroke-width: 1.5; fill: none; stroke-dasharray: 70 600; animation: travel 3.6s cubic-bezier(0.4,0,0.2,1) infinite; }
+  @keyframes travel { from { stroke-dashoffset: 70; } to { stroke-dashoffset: -640; } }
+  @media (prefers-reduced-motion: reduce) { .path-sig { animation: none; stroke-dasharray: none; opacity: 0.7; } }
+  .note { margin-top: 10px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+  .note em { font-style: normal; color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="track">
+    <svg viewBox="0 0 652 64">
+      <path class="path-base" d="M8 40 H150 L190 16 H330 L370 40 H520 L560 16 H644"></path>
+      <path class="path-sig" d="M8 40 H150 L190 16 H330 L370 40 H520 L560 16 H644"></path>
+      <rect class="node" x="140" y="30" width="20" height="20" rx="5"></rect>
+      <rect class="node active" x="360" y="30" width="20" height="20" rx="5"></rect>
+      <rect class="node" x="550" y="6" width="20" height="20" rx="5"></rect>
+      <text class="lbl" x="8" y="58">idea</text>
+      <text class="lbl" x="352" y="62">ai layer</text>
+      <text class="lbl" x="604" y="58">scale</text>
+    </svg>
+  </div>
+  <div class="note">Thin lime line · directional · always moving <em>with purpose</em> — progress, connection, transformation. No glow, no particles.</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- @dsCard group="Visual Language" viewport="700x200" subtitle="Modular grid + layered cards — every layout feels engineered" name="Product Grid" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 22px 24px; font-family: var(--font-sans); }
+  .field { border: 1px solid var(--border-subtle); border-radius: 12px; padding: 16px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .mod { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: 10px; padding: 10px 12px; min-height: 56px; }
+  .mod .m { font-family: var(--font-mono); font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+  .mod .t { font-size: 12px; font-weight: 500; color: var(--text-primary); margin-top: 4px; }
+  .mod.active { border-color: var(--border-accent); }
+  .mod.active .t::after { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-left: 6px; }
+  .wide { grid-column: span 2; }
+  .note { margin-top: 10px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+</style>
+</head>
+<body>
+  <div class="field inq-grid-bg">
+    <div class="mod"><div class="m">01</div><div class="t">Strategy</div></div>
+    <div class="mod active"><div class="m">02</div><div class="t">AI Layer</div></div>
+    <div class="mod"><div class="m">03</div><div class="t">Product</div></div>
+    <div class="mod"><div class="m">04</div><div class="t">Cloud</div></div>
+    <div class="mod wide"><div class="m">05</div><div class="t">Data Systems</div></div>
+    <div class="mod wide"><div class="m">06</div><div class="t">Scale</div></div>
+  </div>
+  <div class="note">48px grid @ 4% opacity max · modules snap to it · one active (lime) module per composition</div>
+</body>
+</html>

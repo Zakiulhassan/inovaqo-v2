@@ -1,0 +1,40 @@
+<!-- @dsCard group="Brand" viewport="700x190" subtitle="Ring + 45° forward signal tail — favicon, loader, watermark, UI mark" name="Q-Core symbol" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 24px; display: flex; gap: 14px; align-items: center; justify-content: center; font-family: var(--font-sans); }
+  .tile { width: 110px; height: 110px; border-radius: 18px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-subtle); flex-direction: column; gap: 8px; }
+  .tile img { width: 48px; height: 48px; }
+  .m { font-family: var(--font-mono); font-size: 8.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); text-align: center; }
+  .anatomy { margin-left: 16px; font-family: var(--font-mono); font-size: 10px; line-height: 2; color: var(--text-secondary); }
+  .anatomy em { font-style: normal; color: var(--accent); }
+</style>
+</head>
+<body>
+  <div>
+    <div class="tile" style="background:#061113"><img src="../assets/logo/qcore-lime.svg" alt=""></div>
+    <div class="m" style="margin-top:6px">primary · lime on dark</div>
+  </div>
+  <div>
+    <div class="tile" style="background:#0A3C40"><img src="../assets/logo/qcore-mist.svg" alt=""></div>
+    <div class="m" style="margin-top:6px">mist on teal</div>
+  </div>
+  <div>
+    <div class="tile" style="background:#EAF2EF"><img src="../assets/logo/qcore-dark.svg" alt=""></div>
+    <div class="m" style="margin-top:6px">dark on light</div>
+  </div>
+  <div>
+    <div class="tile" style="background:transparent; border-style: dashed"><img src="../assets/logo/favicon.svg" alt="" style="width:64px;height:64px"></div>
+    <div class="m" style="margin-top:6px">favicon / app icon</div>
+  </div>
+  <div class="anatomy">
+    ring = <em>product core</em><br>
+    notch = <em>signal entry</em><br>
+    45° tail = <em>velocity</em><br>
+    works at 24px minimum
+  </div>
+</body>
+</html>

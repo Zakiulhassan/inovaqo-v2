@@ -1,0 +1,37 @@
+<!-- @dsCard group="Visual Language" viewport="700x210" subtitle="Motion clarifies transformation — precise, fast, never bouncy" name="Motion principles" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--surface-page); padding: 20px 24px; font-family: var(--font-sans); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .demo { border: 1px solid var(--border-subtle); border-radius: 12px; padding: 14px; }
+  .m { font-family: var(--font-mono); font-size: 8.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+  /* assembly */
+  .mods { display: flex; gap: 6px; }
+  .mods div { width: 26px; height: 26px; border-radius: 6px; background: var(--surface-raised); border: 1px solid var(--border-subtle); opacity: 0; animation: rise 3s var(--ease-signal) infinite; }
+  .mods div:nth-child(2) { animation-delay: 0.12s; } .mods div:nth-child(3) { animation-delay: 0.24s; } .mods div:nth-child(4) { animation-delay: 0.36s; }
+  @keyframes rise { 0% { opacity: 0; transform: translateY(8px); } 18%, 78% { opacity: 1; transform: none; } 92%, 100% { opacity: 0; } }
+  /* loader */
+  .ring { width: 34px; height: 34px; border-radius: 50%; border: 3px solid rgba(234,242,239,0.12); border-top-color: var(--color-signal-lime); animation: spin 1.4s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  /* cta pulse */
+  .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--color-signal-lime); color: var(--color-core-dark); font-size: 12px; font-weight: 600; padding: 9px 16px; border-radius: 10px; }
+  .btn .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--color-core-dark); animation: pulse 2s var(--ease-system) infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .mods div { opacity: 1; } }
+  .specs { grid-column: span 3; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); display: flex; gap: 18px; }
+  .specs .no { color: var(--color-coral); }
+</style>
+</head>
+<body>
+  <div class="demo"><div class="m">System assembly · 600ms stagger</div><div class="mods"><div></div><div></div><div></div><div></div></div></div>
+  <div class="demo"><div class="m">Q-Core loader</div><div class="ring"></div></div>
+  <div class="demo"><div class="m">CTA pulse — subtle, no glow</div><div class="btn"><span class="dot"></span> Book a Discovery Call</div></div>
+  <div class="specs">
+    <span>ease: cubic-bezier(.22,1,.36,1) · hover 150ms · state 240ms · reveal 600ms</span>
+    <span class="no">never: bounce · glitch · particles · parallax soup</span>
+  </div>
+</body>
+</html>
