@@ -239,3 +239,62 @@
 .aiInput input:focus {
   border-color: var(--border-accent);
 }
+
+/* Responsive */
+@media (max-width: 1180px) {
+  .app {
+    grid-template-columns: 200px 1fr;
+  }
+  .ai {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 1px solid var(--border-subtle);
+  }
+}
+
+@media (max-width: 860px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+  .aside {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 12px 14px;
+    gap: 6px;
+  }
+  .wordmark {
+    padding: 4px 12px 4px 4px;
+  }
+  .navSec {
+    display: none;
+  }
+  .navItem {
+    white-space: nowrap;
+    flex: none;
+  }
+  .topbar {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tablewrap {
+    overflow-x: auto;
+  }
+  .tablewrap table {
+    min-width: 640px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 16px;
+  }
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}
