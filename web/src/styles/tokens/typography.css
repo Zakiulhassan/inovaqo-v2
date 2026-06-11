@@ -7,7 +7,7 @@
 :root {
   /* Concept 2.0 stacks — licensed original first, Google substitute second, Geist third.
      Font faces are loaded via next/font in src/styles/fonts.ts, exposed as CSS variables. */
-  --font-sans: var(--font-hanken-grotesk), var(--font-geist-sans), "Inter", system-ui, sans-serif;
+  --font-sans: var(--font-neurial-grotesk), var(--font-hanken-grotesk), var(--font-geist-sans), "Inter", system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), "IBM Plex Mono", monospace;
   /* Condensed uppercase display — "YOUR WORKDAY, ELEVATE YOUR LIFE." moments */
   --font-display-condensed: var(--font-roboto-condensed), "Archivo Narrow", sans-serif;
