@@ -1,0 +1,81 @@
+.frame {
+  position: absolute;
+  inset: 0;
+  padding: 72px 88px;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-core-dark);
+}
+.label {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(10, 60, 64, 0.68);
+}
+.title {
+  font-size: 54px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 24px 0 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  margin-top: 44px;
+}
+.inv {
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.mark {
+  background: linear-gradient(transparent 64%, #c9e835 64%);
+}
+.invSub {
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(6, 17, 19, 0.72);
+  margin-top: 18px;
+  max-width: 460px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table td,
+.table th {
+  text-align: left;
+  padding: 11px 4px;
+  border-bottom: 1px solid rgba(6, 17, 19, 0.12);
+  font-size: 15px;
+  color: rgba(6, 17, 19, 0.78);
+}
+.table th {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(10, 60, 64, 0.68);
+  font-weight: 500;
+}
+.table td:first-child {
+  color: var(--color-core-dark);
+  font-weight: 500;
+}
+.foot {
+  margin-top: auto;
+  display: flex;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(10, 60, 64, 0.6);
+}
+.foot .r {
+  margin-left: auto;
+}

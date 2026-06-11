@@ -1,0 +1,57 @@
+/* ============================================================
+   INOVAQO — Spacing, radius, borders, shadows, motion
+   Spacing is generous and deliberate. Depth comes from layered
+   surfaces and subtle borders, not heavy drop shadows.
+   ============================================================ */
+:root {
+  /* Spacing scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --space-11: 160px;
+
+  /* Section rhythm */
+  --section-pad-hero: 160px;    /* 96–128px mobile */
+  --section-pad-major: 128px;   /* 72–96px mobile */
+  --section-pad-medium: 96px;   /* 56–72px mobile */
+  --card-pad: 32px;             /* 20–24px mobile */
+
+  /* Layout */
+  --container-max: 1280px;
+  --container-wide: 1440px;   /* immersive heroes only */
+  --container-narrow: 960px;  /* text-heavy sections */
+  --grid-columns: 12;
+  --grid-gutter: 24px;
+
+  /* Radius */
+  --radius-sm: 8px;    /* tags, inputs, small chips */
+  --radius-md: 12px;   /* buttons, fields */
+  --radius-lg: 20px;   /* cards, panels */
+  --radius-xl: 28px;   /* large feature panels */
+  --radius-pill: 999px;
+
+  /* Borders */
+  --border-width: 1px;
+  --border-card: 1px solid var(--border-subtle);
+  --border-card-hover: 1px solid var(--border-strong);
+
+  /* Shadows — restrained; surfaces + borders carry most depth */
+  --shadow-card: 0 1px 0 rgba(234,242,239,0.04) inset, 0 8px 24px rgba(0,0,0,0.25);
+  --shadow-raised: 0 16px 40px rgba(0,0,0,0.35);
+  --shadow-signal: 0 0 0 1px rgba(201,232,53,0.35), 0 0 24px rgba(201,232,53,0.12);
+
+  /* Motion — precise, fast, never bouncy */
+  --ease-signal: cubic-bezier(0.22, 1, 0.36, 1);  /* default reveals */
+  --ease-system: cubic-bezier(0.4, 0, 0.2, 1);    /* UI state changes */
+  --duration-fast: 150ms;     /* hover, press */
+  --duration-base: 240ms;     /* state transitions */
+  --duration-reveal: 600ms;   /* section/card reveals */
+  --duration-signal: 1800ms;  /* signal path travel */
+}

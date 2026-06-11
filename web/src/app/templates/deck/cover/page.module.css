@@ -1,0 +1,59 @@
+.gridBg {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(234, 242, 239, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(234, 242, 239, 0.03) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.frame {
+  position: absolute;
+  inset: 0;
+  padding: 80px 88px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 76px;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  margin: auto 0 0;
+  max-width: 980px;
+  text-wrap: balance;
+}
+.title em {
+  font-style: normal;
+  color: var(--color-signal-lime);
+}
+.tag {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-top: 30px;
+}
+.tag em {
+  font-style: normal;
+  color: var(--color-signal-lime);
+}
+.foot {
+  margin-top: auto;
+  display: flex;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.foot .r {
+  margin-left: auto;
+}
+.qmark {
+  position: absolute;
+  right: -90px;
+  top: -90px;
+  width: 380px;
+  height: 380px;
+  opacity: 0.06;
+}

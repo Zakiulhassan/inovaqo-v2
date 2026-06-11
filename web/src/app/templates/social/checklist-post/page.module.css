@@ -1,0 +1,77 @@
+.canvas {
+  position: absolute;
+  inset: 0;
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.title {
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 32px 0 0;
+}
+.list {
+  list-style: none;
+  margin: 48px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+.chk {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--border-accent);
+  position: relative;
+}
+.chk::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  width: 14px;
+  height: 7px;
+  border-left: 3px solid var(--color-signal-lime);
+  border-bottom: 3px solid var(--color-signal-lime);
+  transform: rotate(-45deg);
+}
+.text {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  padding-top: 4px;
+}
+.text b {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.foot {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+.cta {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-signal-lime);
+}

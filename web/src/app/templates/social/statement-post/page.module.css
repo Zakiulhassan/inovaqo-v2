@@ -1,0 +1,46 @@
+.canvas {
+  position: absolute;
+  inset: 0;
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-signal-lime);
+}
+.title {
+  font-size: 92px;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+  margin: 36px 0 0;
+  text-wrap: balance;
+}
+.dim {
+  color: var(--text-secondary);
+}
+.foot {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.tag {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+.qmark {
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  width: 460px;
+  height: 460px;
+  opacity: 0.05;
+}

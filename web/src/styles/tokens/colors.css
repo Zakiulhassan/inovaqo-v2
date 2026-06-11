@@ -1,0 +1,77 @@
+/* ============================================================
+   INOVAQO — Color tokens
+   Idea: Controlled Velocity. Dark technical atmosphere, deep teal
+   trust, rare lime signal. Lime is a signal, not decoration.
+   Usage ratio: ~60% dark base / 25% teal surfaces / 10% mist / 5% lime / 1–2% coral.
+   ============================================================ */
+:root {
+  /* Core palette */
+  --color-core-dark: #061113;   /* Core Black Teal — main dark background */
+  --color-brand-teal: #0A3C40;  /* Deep Technical Teal — panels, trust, depth */
+  --color-signal-lime: #C9E835; /* Signal Lime — CTA, active states, signals */
+  --color-mist-white: #EAF2EF;  /* Mist White — light base, text on dark */
+  --color-graphite: #1B2528;    /* Graphite Teal — cards, UI surfaces */
+  --color-cloud-gray: #8FB7C2;  /* Cloud Gray Blue — muted text, diagrams */
+  --color-coral: #FF6B4A;       /* Controlled Coral — rare alerts only */
+
+  /* Semantic — dark theme (primary brand expression) */
+  --surface-page: var(--color-core-dark);
+  --surface-panel: var(--color-brand-teal);
+  --surface-card: var(--color-graphite);
+  --surface-raised: #233034;
+  --surface-field: #11191c;
+
+  --text-primary: var(--color-mist-white);
+  --text-secondary: rgba(234, 242, 239, 0.72);
+  --text-muted: rgba(143, 183, 194, 0.76);
+  --text-on-accent: var(--color-core-dark);
+
+  --accent: var(--color-signal-lime);
+  --accent-dim: rgba(201, 232, 53, 0.16);
+
+  --border-subtle: rgba(234, 242, 239, 0.10);
+  --border-strong: rgba(234, 242, 239, 0.22);
+  --border-accent: rgba(201, 232, 53, 0.45);
+
+  /* UI states */
+  --state-active: var(--color-signal-lime);
+  --state-success: var(--color-signal-lime);
+  --state-warning: var(--color-coral);
+  --state-error: var(--color-coral);
+  --state-info: var(--color-cloud-gray);
+  --state-disabled: rgba(143, 183, 194, 0.35);
+
+  /* Approved gradients */
+  --gradient-atmosphere: linear-gradient(180deg, #061113 0%, #0A3C40 140%);
+  --gradient-depth: linear-gradient(180deg, #1B2528 0%, #0A3C40 160%);
+  --gradient-signal-fade: linear-gradient(90deg, rgba(201,232,53,0.55), rgba(201,232,53,0));
+
+  /* Charts / diagrams */
+  --chart-1: var(--color-signal-lime);
+  --chart-2: var(--color-cloud-gray);
+  --chart-3: rgba(143, 183, 194, 0.45);
+  --chart-4: var(--color-coral);
+}
+
+/* Light theme scope — clean, premium, never lime-on-light text */
+[data-theme="light"] {
+  --surface-page: var(--color-mist-white);
+  --surface-panel: #ffffff;
+  --surface-card: #ffffff;
+  --surface-raised: #f4f9f7;
+  --surface-field: #ffffff;
+
+  --text-primary: var(--color-core-dark);
+  --text-secondary: rgba(6, 17, 19, 0.72);
+  --text-muted: rgba(10, 60, 64, 0.68);
+  --text-on-accent: var(--color-core-dark);
+
+  --accent: var(--color-brand-teal); /* primary actions go teal in light mode */
+  --accent-dim: rgba(10, 60, 64, 0.10);
+
+  --border-subtle: rgba(6, 17, 19, 0.10);
+  --border-strong: rgba(6, 17, 19, 0.24);
+  --border-accent: rgba(10, 60, 64, 0.45);
+
+  --state-disabled: rgba(6, 17, 19, 0.30);
+}

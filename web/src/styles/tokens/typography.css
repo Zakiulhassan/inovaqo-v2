@@ -1,0 +1,47 @@
+/* ============================================================
+   INOVAQO — Typography tokens
+   Primary: Geist Sans (Aeonik if licensed). Mono: Geist Mono for
+   labels, metadata, technical detail only — never paragraphs.
+   Typography does the premium work: large, tight, confident.
+   ============================================================ */
+:root {
+  /* Concept 2.0 stacks — licensed original first, Google substitute second, Geist third.
+     Font faces are loaded via next/font in src/styles/fonts.ts, exposed as CSS variables. */
+  --font-sans: var(--font-hanken-grotesk), var(--font-geist-sans), "Inter", system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), "IBM Plex Mono", monospace;
+  /* Condensed uppercase display — "YOUR WORKDAY, ELEVATE YOUR LIFE." moments */
+  --font-display-condensed: var(--font-roboto-condensed), "Archivo Narrow", sans-serif;
+  /* Heavy value-word display — "Growth" / "honesty" statement walls. NewBlack Typeface is licensed and self-hosted. */
+  --font-display-black: var(--font-newblack), var(--font-archivo-black), "Archivo", sans-serif;
+  /* Script accent — ONE expressive word per composition, lime */
+  --font-script: var(--font-neonderthaw), cursive;
+
+  /* Scale — desktop (mobile values in comments) */
+  --text-display-xl: 112px; /* 52px mobile — large hero moments */
+  --text-display: 88px;     /* 44px — main hero headline */
+  --text-h1: 72px;          /* 40px — page title */
+  --text-h2: 56px;          /* 34px — section title */
+  --text-h3: 36px;          /* 28px — card/feature heading */
+  --text-h4: 24px;          /* 22px — small sections */
+  --text-body-lg: 20px;     /* 18px — hero supporting copy */
+  --text-body: 17px;        /* 16px — paragraphs */
+  --text-body-sm: 14px;     /* captions, UI table text */
+  --text-label: 12px;       /* 11px — mono labels */
+
+  /* Tracking */
+  --tracking-display: -0.04em;
+  --tracking-heading: -0.03em;
+  --tracking-body: 0;
+  --tracking-label: 0.12em;
+
+  /* Leading */
+  --leading-display: 0.98;
+  --leading-heading: 1.08;
+  --leading-body: 1.65;
+  --leading-label: 1.3;
+
+  /* Weights — never go heavier than 600 for headings */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+}
